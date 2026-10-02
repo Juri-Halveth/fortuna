@@ -38,12 +38,14 @@ koennen Fenstertitel und lokale Pfade enthalten; nicht ungeprueft veroeffentlich
 ## Wo finde ich was?
 
 - [Projekt auf GitHub](https://github.com/Juri-Halveth/fortuna)
+- [FORTUNA-Fundstueck im Browser](https://juri-halveth.github.io/fortuna/)
 - [Veroeffentlichungen und spaetere Downloads](https://github.com/Juri-Halveth/fortuna/releases)
 - [Fragen und Fehler melden](https://github.com/Juri-Halveth/fortuna/issues)
 - [HALVETH-Figurenraum](https://juri-halveth.github.io/halveth-scarlet/entities/)
 
-**Stand dieser Veroeffentlichung:** Projektbeschreibung. Noch kein oeffentlicher
-EXE-Download und noch keine Veroeffentlichung des Programmquellcodes in diesem
+**Stand dieser Veroeffentlichung:** Projektbeschreibung und Quellcode der
+Browser-Verhaltenssimulation unter `docs/`. Noch kein oeffentlicher
+EXE-Download und noch keine Veroeffentlichung des Desktop-Programmquellcodes in diesem
 Repository. Der lokale Desktop-Stand traegt die Versionsnummer 1.1.2;
 V4 bezeichnet das historische Build-Nachweispaket, nicht eine neue App-Version.
 Die lokale EXE ist nicht digital signiert.
@@ -63,12 +65,26 @@ Spielchancen oder garantierten Ergebnissen verbunden.
 
 ## FORTUNA als Fundstueck
 
-Geplant ist ein leuchtender Seelenstein im HALVETH-Figurenraum. Sein sichtbarer
+Die Browser-Szene zeigt einen leuchtenden Seelenstein mit 69 Figuren. Sein sichtbarer
 Anfangsname ist **Unbekanntes Objekt**. Beim Erkunden werden Herkunft,
 Programmhinweise und spaeter das freigegebene Quellarchiv sichtbar.
 
-Die lokale Neugier-Simulation verwendet Entfernung, Neuheit und eine
-figurspezifische Wartezeit. Das ist nachvollziehbares Softwareverhalten.
-Die Anbindung an den oeffentlichen Figurenraum ist noch nicht veroeffentlicht.
+Jede Figur prueft ihren eigenen beobachtbaren Zustand: Untersuchung fertig?
+Gedraenge? Stillstand ohne neue Beobachtung? Daraus waehlt ihre lokale Regel
+zwischen Fortsetzen und Umgebung erkunden. Eine Frage im Raum ist ein Eingang,
+kein gemeinsamer Befehl und keine vorgegebene Antwort. Nach dem Fund gehen die
+Figuren weiter, statt dauerhaft im Kreis zu bleiben.
+
+Das ist eine lokale Verhaltenssimulation, kein angeschlossener KI-Dienst.
+Im Detailfenster wird ein konkreter Entscheidungsgrund angezeigt. Der Bestand
+der oeffentlichen Scarlet-Welt wurde nicht ersetzt; dies ist der eigene
+FORTUNA-Raum. Die kopierten Figuren und Daten sind an den Scarlet-Commit
+`15f5df46e20e34bc06bc7d7676c7fd094ebb39f4` gebunden. Lizenzhinweise: `docs/NOTICE.md`.
+
 Ein Hash ist dabei ein Fingerabdruck des Quellarchivs, kein Ersatz fuer dessen
-Inhalt. Das Archiv bleibt als Datei erhalten.
+Inhalt. Das Archiv bleibt lokal als Datei erhalten und wird hier noch nicht
+zum Download angeboten. Die Browser-Szene benoetigt weder Wallet noch Login.
+
+Tests: `node --test docs/curiosity.test.mjs`. Die automatische Verhaltenspruefung
+deckt 69 Figuren, individuelle Auswahl, Pausieren, weitere Bewegung und den
+Unterschied zwischen Frage und Befehl ab.

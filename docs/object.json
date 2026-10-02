@@ -1,0 +1,44 @@
+{
+  "schema": "fortuna.world-object.v1",
+  "id": "fortuna-soulstone",
+  "initialLabel": "Unbekanntes Objekt",
+  "revealedLabel": "FORTUNA",
+  "state": "PUBLIC_BROWSER_CANDIDATE",
+  "recordedAt": "2026-10-02T19:35:24.2905237Z",
+  "sourceArchive": {
+    "sha256": "996598C11C056F39FB81E5CFA97DA9A401B673D40F8292A0BA6BEDC3AC823C53",
+    "path": null,
+    "sourceCommit": "09604b06f44a0daf4296178a707225ee59f7b309"
+  },
+  "worldSnapshot": {
+    "assets": [
+      {
+        "path": "assets/entity-vendor/runtime.mjs",
+        "url": "https://raw.githubusercontent.com/Juri-Halveth/halveth-scarlet/15f5df46e20e34bc06bc7d7676c7fd094ebb39f4/assets/entity-vendor/runtime.mjs",
+        "sha256": "17604FB47764993E5C3C3E8202095BAD9FD90FA2B74E9A7B75E72BC1161216F9"
+      },
+      {
+        "path": "assets/entity-vendor/three.LICENSE.txt",
+        "url": "https://raw.githubusercontent.com/Juri-Halveth/halveth-scarlet/15f5df46e20e34bc06bc7d7676c7fd094ebb39f4/assets/entity-vendor/three.LICENSE.txt",
+        "sha256": "8B378EBE60E2FE500158CB0AC71CB5E8B7D92953C2ABCC63A0EB90499653B5BC"
+      },
+      {
+        "path": "assets/entity-vendor/lucide.LICENSE.txt",
+        "url": "https://raw.githubusercontent.com/Juri-Halveth/halveth-scarlet/15f5df46e20e34bc06bc7d7676c7fd094ebb39f4/assets/entity-vendor/lucide.LICENSE.txt",
+        "sha256": "B495047BD93A9B06913511076F504DABA17D5BBEB3E0650F3BB53A4220329C57"
+      },
+      {
+        "path": "assets/entity-figures.mjs",
+        "url": "https://raw.githubusercontent.com/Juri-Halveth/halveth-scarlet/15f5df46e20e34bc06bc7d7676c7fd094ebb39f4/assets/entity-figures.mjs",
+        "sha256": "42BD196E3FDBDAAF0C4756B0E338C555466807F4F2DEF69FA8E6F77D7DC657A3"
+      },
+      {
+        "path": "assets/universe-data.js",
+        "url": "https://raw.githubusercontent.com/Juri-Halveth/halveth-scarlet/15f5df46e20e34bc06bc7d7676c7fd094ebb39f4/assets/universe-data.js",
+        "sha256": "194BEA9DAFFF82AB2137AE03F98A27110B7C14A982AF404DD5B416321978A34F"
+      }
+    ],
+    "commit": "15f5df46e20e34bc06bc7d7676c7fd094ebb39f4"
+  },
+  "publicIntegration": "STANDALONE_FORTUNA_NOT_SCARLET"
+}
