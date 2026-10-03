@@ -10,6 +10,8 @@ Entscheidungsmoeglichkeiten.
 - Vergleicht eingegebene Moeglichkeiten nach Wahrscheinlichkeit, Ertrag,
   Kosten, Freude, Stabilitaet und Risiko.
 - Speichert Profile und ein lokales Journal.
+- Im Browserraum: **Kollektiv /70** zeigt die Einzelentscheidungen von 69
+  Figurenprofilen und Fortuna zu selbst eingegebenen Möglichkeiten.
 
 Der berechnete Wert ist eine Rangfolge deiner Eingaben. Er veraendert keine
 Gewinnchancen in Spielen oder Casinos und verspricht keinen Gewinn.
@@ -46,9 +48,27 @@ koennen Fenstertitel und lokale Pfade enthalten; nicht ungeprueft veroeffentlich
 **Stand dieser Veroeffentlichung:** Projektbeschreibung und Quellcode der
 Browser-Verhaltenssimulation unter `docs/`. Noch kein oeffentlicher
 EXE-Download und noch keine Veroeffentlichung des Desktop-Programmquellcodes in diesem
-Repository. Der lokale Desktop-Stand traegt die Versionsnummer 1.1.2;
+Repository. Der lokale Desktop-Stand traegt die Versionsnummer 1.3.0;
 V4 bezeichnet das historische Build-Nachweispaket, nicht eine neue App-Version.
 Die lokale EXE ist nicht digital signiert.
+
+## Kollektiv im Browser
+
+Im [FORTUNA-Raum](https://juri-halveth.github.io/fortuna/) unten
+**Kollektiv /70** öffnen. Eigene Möglichkeiten eingeben oder ausdrücklich
+erfundene Beispielwerte laden und **Gemeinsam auswählen** anklicken.
+Alle 70 Einzelentscheidungen und Gewichte sind sichtbar. Ein Profil öffnet
+seine stabile Adresse und seinen Identitätsanker. Unvollständige Eingaben
+und gemeinsame Gleichstände bleiben offen.
+
+Die Anfangsgewichte sind aus den Profiladressen abgeleitet. Alle Profile
+verwenden dieselbe lokale Engine; eine Glückswirkung wurde nicht gemessen.
+Eingaben werden im Browser berechnet und von dieser Seite nicht versendet.
+Die 69 bewegten Figuren und die 70 Auswahlprofile sind getrennte Bestände.
+
+Die Tests vergleichen die Browser-Rechnung mit vier gebundenen synthetischen
+Desktop-Fällen und prüfen Identität, unvollständige Eingaben, Gleichstand und
+ungültige Daten: `node --test docs/curiosity.test.mjs docs/collective.test.mjs`.
 
 ## Lizenz
 

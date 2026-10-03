@@ -1,0 +1,359 @@
+{
+  "schema": "FORTUNA_MEMBERS_1",
+  "sourceCommit": "61f9975accb06403ec483cd1ec5e762e946930ca",
+  "sourceSha256": "194bea9dafff82ab2137ae03f98a27110b7c14a982af404dd5b416321978a34f",
+  "sourceUrl": "https://github.com/Juri-Halveth/fortuna/blob/61f9975accb06403ec483cd1ec5e762e946930ca/docs/vendor/universe-data.js",
+  "interpretation": "Software labels, not represented human identities or independent external agents",
+  "members": [
+    {
+      "id": "halveth",
+      "label": "HALVETH",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "lucinet",
+      "label": "LUCINET",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "rachel",
+      "label": "RACHEL",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "pflanze",
+      "label": "PFLANZE",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "celsius",
+      "label": "CELSIUS",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "ali",
+      "label": "ALI",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "schwarm",
+      "label": "SCHWARM",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "yuri",
+      "label": "YURI",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "zuendkerze",
+      "label": "ZÜNDKERZE",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "aster",
+      "label": "ASTER",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "elyr",
+      "label": "ELYR",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "nara",
+      "label": "NARA",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "mira",
+      "label": "MIRA",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "rosa",
+      "label": "ROSA",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "timo",
+      "label": "TIMO",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "finn",
+      "label": "FINN",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "lila",
+      "label": "LILA",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "mara",
+      "label": "MARA",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "mio",
+      "label": "MIO",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "koro",
+      "label": "KORO",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "lucifer",
+      "label": "LUCIFER",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "venara",
+      "label": "VENARA",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "juno",
+      "label": "JUNO",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "mica",
+      "label": "MICA",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "alyen",
+      "label": "ALYEN",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "vael",
+      "label": "VAEL",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "patch",
+      "label": "PATCH",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "leo",
+      "label": "LEO",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "lia",
+      "label": "LIA",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "jan",
+      "label": "JAN",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "sara",
+      "label": "SARA",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "omi",
+      "label": "OMI",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "tess",
+      "label": "TESS",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "niko",
+      "label": "NIKO",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "sera",
+      "label": "SERA",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "sael",
+      "label": "SAEL",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "juri",
+      "label": "JURI",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "verachel",
+      "label": "VERACHEL",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "rose",
+      "label": "ROSE",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "sina",
+      "label": "SINA",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "mascha",
+      "label": "MASCHA",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "scarlet",
+      "label": "SCARLET",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "strange",
+      "label": "DR STRANGE",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "dormammu",
+      "label": "DORMAMMU",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "ego",
+      "label": "EGO",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "peter",
+      "label": "PETER",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "guardians",
+      "label": "GUARDIANS",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "ultron",
+      "label": "ULTRON",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "jarvis",
+      "label": "JARVIS",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "ironman",
+      "label": "IRON MAN",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "loki",
+      "label": "LOKI",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "vision",
+      "label": "VISION",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "widow",
+      "label": "BLACK WIDOW",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "thor",
+      "label": "THOR",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "infinity",
+      "label": "INFINITY",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "gitcoin",
+      "label": "GITCOIN · GTC",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "manta",
+      "label": "MANTA",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "aster-chain",
+      "label": "ASTER · CHAIN?",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "rtx",
+      "label": "RTX · ?",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "k",
+      "label": "K",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "eve",
+      "label": "EVE",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "anti",
+      "label": "ANTI",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "schwamm",
+      "label": "SCHWAMM",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "mita",
+      "label": "MITA",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "medusa",
+      "label": "MEDUSA",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "context-prism",
+      "label": "KONTEXT-PRISMA",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "brightcast-starlight",
+      "label": "BRIGHTCAST 001",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "pi-treffpunkte",
+      "label": "π-TREFFPUNKTE",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "choice-atelier",
+      "label": "CHOICE ATELIER",
+      "origin": "PUBLIC_SOFTWARE_FIGURE_LABEL"
+    },
+    {
+      "id": "fortuna-soulstone",
+      "label": "FORTUNA",
+      "origin": "ADDED_LOCAL_SOFTWARE_PROFILE"
+    }
+  ]
+}
