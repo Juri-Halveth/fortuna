@@ -1,0 +1,4092 @@
+{
+  "schema": "FORTUNA_NATIVE_ARITHMETIC_ORACLE_1",
+  "scope": "Four authored synthetic input sets; shared model, not independent consensus",
+  "engineSourceSha256": "c0e26998d3a8e95478438b265f5c764598d878487a51c021ed6acf1ead1ed6a1",
+  "collectiveSourceSha256": "b802d156d1fb7b205530b3ea4409aec6398e38aea2f801e4e182e9ebb25c9528",
+  "fixtures": [
+    {
+      "candidates": [
+        {
+          "id": "Nutzen",
+          "allowed": true,
+          "probability": 0.5,
+          "payout": 60,
+          "cost": 0,
+          "joy": 1,
+          "stability": 1,
+          "risk": 0
+        },
+        {
+          "id": "Freude",
+          "allowed": true,
+          "probability": 0.5,
+          "payout": 1,
+          "cost": 0,
+          "joy": 30,
+          "stability": 1,
+          "risk": 0
+        }
+      ],
+      "baseWeights": {
+        "ev": 1,
+        "joy": 1,
+        "risk": 1,
+        "stability": 1
+      },
+      "mode": "FORTUNA",
+      "expected": {
+        "ballots": [
+          {
+            "entityId": "halveth",
+            "label": "HALVETH",
+            "identitySha256": "946b39c5090920bc19bb633d113034396e10389665c6489eedac2f54734a6ed4",
+            "preferences": {
+              "ev": 0.7088235294117646,
+              "joy": 2.5205882352941176,
+              "stability": 1.4617647058823529,
+              "risk": 1.65
+            },
+            "candidateId": "Freude",
+            "score": 77.43382352941177,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "lucinet",
+            "label": "LUCINET",
+            "identitySha256": "925b32e5aec707601b78cbfffaa12135812cd5cf9b14c7c360a9affe8a4e5608",
+            "preferences": {
+              "ev": 2.8970588235294117,
+              "joy": 1.826470588235294,
+              "stability": 2.1911764705882355,
+              "risk": 2.626470588235294
+            },
+            "candidateId": "Nutzen",
+            "score": 90.92941176470588,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "rachel",
+            "label": "RACHEL",
+            "identitySha256": "1bfb05d9633b757f8b7f3f72374845fda171eebb03c740a83483ce118f550d7c",
+            "preferences": {
+              "ev": 2.3323529411764707,
+              "joy": 2.85,
+              "stability": 1.7441176470588236,
+              "risk": 0.5794117647058823
+            },
+            "candidateId": "Freude",
+            "score": 88.41029411764707,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "pflanze",
+            "label": "PFLANZE",
+            "identitySha256": "f0e1d04c7807c472fb5894cb12588c42707aa8b490abacc33734711557981368",
+            "preferences": {
+              "ev": 2.873529411764706,
+              "joy": 2.614705882352941,
+              "stability": 0.7088235294117646,
+              "risk": 1.0970588235294119
+            },
+            "candidateId": "Nutzen",
+            "score": 89.52941176470587,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "celsius",
+            "label": "CELSIUS",
+            "identitySha256": "1053a7828b0792f8c319de0823e51279ebd8e8bbf756a864de1405c60417551b",
+            "preferences": {
+              "ev": 1.9911764705882353,
+              "joy": 2.873529411764706,
+              "stability": 1.8735294117647059,
+              "risk": 0.6029411764705883
+            },
+            "candidateId": "Freude",
+            "score": 89.075,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "ali",
+            "label": "ALI",
+            "identitySha256": "8af14bd1ffd27cb6b955bf83f0081a0a5eac48c2416b1e0bcfc5394b8acb75e5",
+            "preferences": {
+              "ev": 2.7794117647058822,
+              "joy": 3.038235294117647,
+              "stability": 3.1323529411764706,
+              "risk": 1.5558823529411765
+            },
+            "candidateId": "Freude",
+            "score": 95.66911764705881,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "schwarm",
+            "label": "SCHWARM",
+            "identitySha256": "a43c80bd0bd97d3e609eee76b5ec586a6b483ef38761319657d92f124a88390c",
+            "preferences": {
+              "ev": 1.4617647058823529,
+              "joy": 2.7558823529411764,
+              "stability": 1.6147058823529412,
+              "risk": 1.4147058823529413
+            },
+            "candidateId": "Freude",
+            "score": 85.0220588235294,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "yuri",
+            "label": "YURI",
+            "identitySha256": "d1afd5d85d30a07a59696f8754a17d68bb1e9b29ce5d0d7b014a5f7e18e54f60",
+            "preferences": {
+              "ev": 3.25,
+              "joy": 1.2147058823529413,
+              "stability": 3.014705882352941,
+              "risk": 0.65
+            },
+            "candidateId": "Nutzen",
+            "score": 101.72941176470589,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "zuendkerze",
+            "label": "ZÜNDKERZE",
+            "identitySha256": "780b9abd2e8f6e7259c0ee9a1041363f50bfcfd06da17b42cb212a89f2273807",
+            "preferences": {
+              "ev": 0.37941176470588234,
+              "joy": 0.7441176470588236,
+              "stability": 0.4970588235294118,
+              "risk": 1.1794117647058824
+            },
+            "candidateId": "Freude",
+            "score": 23.01029411764706,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "aster",
+            "label": "ASTER",
+            "identitySha256": "afad29a210cddc1d245565835249864ac809227f51a6e5814c93337a417b511d",
+            "preferences": {
+              "ev": 0.9088235294117647,
+              "joy": 1.1558823529411764,
+              "stability": 2.7558823529411764,
+              "risk": 1.9088235294117648
+            },
+            "candidateId": "Freude",
+            "score": 37.88676470588235,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "elyr",
+            "label": "ELYR",
+            "identitySha256": "78016a9d35a3da25d0b46a52bc114037e50345ed91e7769da6bdfec9fb561551",
+            "preferences": {
+              "ev": 2.885294117647059,
+              "joy": 0.2852941176470588,
+              "stability": 0.34411764705882353,
+              "risk": 0.6617647058823529
+            },
+            "candidateId": "Nutzen",
+            "score": 87.18823529411765,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "nara",
+            "label": "NARA",
+            "identitySha256": "c57dd0512cf238ddcdacb83caecc59d984dbb7cdd8c4fe270a70ed0e9bf7588e",
+            "preferences": {
+              "ev": 1.4264705882352942,
+              "joy": 1.5323529411764707,
+              "stability": 2.873529411764706,
+              "risk": 0.26176470588235295
+            },
+            "candidateId": "Freude",
+            "score": 49.557352941176475,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "mira",
+            "label": "MIRA",
+            "identitySha256": "a40b906f4d30c0b9bb8b1a3d85c00cb726ae67ae6e690f4b169df08884196f71",
+            "preferences": {
+              "ev": 0.34411764705882353,
+              "joy": 2.6735294117647057,
+              "stability": 1.45,
+              "risk": 2.6735294117647057
+            },
+            "candidateId": "Freude",
+            "score": 81.82794117647059,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "rosa",
+            "label": "ROSA",
+            "identitySha256": "1d5ff7d33caf73e4aca8a84450b8a97731c88e88ff5f0d76d0b0ac221856652f",
+            "preferences": {
+              "ev": 1.5794117647058823,
+              "joy": 0.8029411764705883,
+              "stability": 1.261764705882353,
+              "risk": 1.0970588235294119
+            },
+            "candidateId": "Nutzen",
+            "score": 49.44705882352942,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "timo",
+            "label": "TIMO",
+            "identitySha256": "f1ec3c2a16be15f8d14ba71ebaa34220d60dd74073832725a8f1c2729eba79f8",
+            "preferences": {
+              "ev": 1.1088235294117648,
+              "joy": 2.097058823529412,
+              "stability": 2.8264705882352943,
+              "risk": 0.3323529411764706
+            },
+            "candidateId": "Freude",
+            "score": 66.29264705882353,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "finn",
+            "label": "FINN",
+            "identitySha256": "0545add6ccb350dc6f483c6f596235fa48916a12685efb73e579e4f47192b282",
+            "preferences": {
+              "ev": 1.2029411764705882,
+              "joy": 1.9911764705882353,
+              "stability": 2.05,
+              "risk": 1.4617647058823529
+            },
+            "candidateId": "Freude",
+            "score": 62.38676470588235,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "lila",
+            "label": "LILA",
+            "identitySha256": "220b3e5c15f3708913779005bbb1a44f724758f0b513fdd41b9162dde148e516",
+            "preferences": {
+              "ev": 1.6147058823529412,
+              "joy": 3.014705882352941,
+              "stability": 1.5676470588235294,
+              "risk": 2.5323529411764705
+            },
+            "candidateId": "Freude",
+            "score": 92.81617647058823,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "mara",
+            "label": "MARA",
+            "identitySha256": "dd21b0bc28e0b8adafc3cfa54bfadfb8b249daa08178e371b3028765f8b70485",
+            "preferences": {
+              "ev": 0.65,
+              "joy": 0.6970588235294117,
+              "stability": 0.5441176470588236,
+              "risk": 1.261764705882353
+            },
+            "candidateId": "Freude",
+            "score": 21.780882352941173,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "mio",
+            "label": "MIO",
+            "identitySha256": "a031ebad23b842dbde1a51f724603877229758c5b65bc9071a1be4d312dbae22",
+            "preferences": {
+              "ev": 1.4970588235294118,
+              "joy": 0.9441176470588235,
+              "stability": 0.8029411764705883,
+              "risk": 2.85
+            },
+            "candidateId": "Nutzen",
+            "score": 46.65882352941177,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "koro",
+            "label": "KORO",
+            "identitySha256": "7f6f7934c86f95be18342f47114d2d5ea7fae12d15d2c5194c37d9ee454cd691",
+            "preferences": {
+              "ev": 2.9676470588235295,
+              "joy": 0.46176470588235297,
+              "stability": 1.038235294117647,
+              "risk": 1.2735294117647058
+            },
+            "candidateId": "Nutzen",
+            "score": 90.52941176470588,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "lucifer",
+            "label": "LUCIFER",
+            "identitySha256": "09a5ac555f721f151ef19161329e2743579a6b7d73be8b9a8aa1d164d80efddb",
+            "preferences": {
+              "ev": 1.5911764705882352,
+              "joy": 2.8970588235294117,
+              "stability": 1.673529411764706,
+              "risk": 2.5794117647058825
+            },
+            "candidateId": "Freude",
+            "score": 89.38088235294117,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "venara",
+            "label": "VENARA",
+            "identitySha256": "3ed4efc0c9f89b0c75d2870f75f6b517a95780917fafefd55920d92d5faa4c49",
+            "preferences": {
+              "ev": 0.42647058823529416,
+              "joy": 3.073529411764706,
+              "stability": 2.8264705882352943,
+              "risk": 2.414705882352941
+            },
+            "candidateId": "Freude",
+            "score": 95.24558823529414,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "juno",
+            "label": "JUNO",
+            "identitySha256": "3e08c1ef502c339b85e166768efd48c4b179303f81502b931e3f46c175c16acd",
+            "preferences": {
+              "ev": 2.6735294117647057,
+              "joy": 1.6970588235294117,
+              "stability": 3.026470588235294,
+              "risk": 2.4382352941176473
+            },
+            "candidateId": "Nutzen",
+            "score": 84.92941176470589,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "mica",
+            "label": "MICA",
+            "identitySha256": "9f99dcd578692dab3715944cd82540e16237bd579a6b4cd43e4eb85ed58f4df8",
+            "preferences": {
+              "ev": 1.5676470588235294,
+              "joy": 1.6970588235294117,
+              "stability": 2.461764705882353,
+              "risk": 2.1441176470588235
+            },
+            "candidateId": "Freude",
+            "score": 54.15735294117647,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "alyen",
+            "label": "ALYEN",
+            "identitySha256": "109d4c691d90cb1a58e6e88b5d19f0184ed6c7116632834d5775070326d04e39",
+            "preferences": {
+              "ev": 1.4852941176470589,
+              "joy": 2.261764705882353,
+              "stability": 0.3205882352941176,
+              "risk": 1.25
+            },
+            "candidateId": "Freude",
+            "score": 68.91617647058824,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "vael",
+            "label": "VAEL",
+            "identitySha256": "aec76ad57fe37e1b6d04c74c293539f4aaeecb4a084fce2175ea3f45443d6eee",
+            "preferences": {
+              "ev": 0.7441176470588236,
+              "joy": 0.8970588235294118,
+              "stability": 2.1205882352941177,
+              "risk": 0.47352941176470587
+            },
+            "candidateId": "Freude",
+            "score": 29.404411764705884,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "patch",
+            "label": "PATCH",
+            "identitySha256": "e51b067f40f0843a03501bdf3de5c46f9dee19c733fa67b47706c1067beaf420",
+            "preferences": {
+              "ev": 0.5205882352941176,
+              "joy": 0.8264705882352941,
+              "stability": 2.638235294117647,
+              "risk": 0.8970588235294118
+            },
+            "candidateId": "Freude",
+            "score": 27.69264705882353,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "leo",
+            "label": "LEO",
+            "identitySha256": "6fc90a7c2bcd6b578e7768b0bd2a4011414472fbfd359aecf69a5ab0bbd3564c",
+            "preferences": {
+              "ev": 1.7323529411764707,
+              "joy": 0.46176470588235297,
+              "stability": 0.7676470588235295,
+              "risk": 2.626470588235294
+            },
+            "candidateId": "Nutzen",
+            "score": 53.199999999999996,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "lia",
+            "label": "LIA",
+            "identitySha256": "91daeb1ed4512159042d77a2f0f0396d6c974b99e7a900766fe35be9cd5a0271",
+            "preferences": {
+              "ev": 1.7558823529411764,
+              "joy": 1.7323529411764707,
+              "stability": 1.5205882352941176,
+              "risk": 0.6852941176470588
+            },
+            "candidateId": "Nutzen",
+            "score": 55.92941176470588,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "jan",
+            "label": "JAN",
+            "identitySha256": "f49c101d13dcc3a78b7ddbfc88da32bed1a84b056e82403ccc48f285c84fbb3a",
+            "preferences": {
+              "ev": 1.238235294117647,
+              "joy": 2.614705882352941,
+              "stability": 1.2970588235294118,
+              "risk": 1.4147058823529413
+            },
+            "candidateId": "Freude",
+            "score": 80.35735294117647,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "sara",
+            "label": "SARA",
+            "identitySha256": "8f2b4ad83743ba2fc56531ddd1967ed5be5a1c8d19e09a3d76e7aeb5f4214934",
+            "preferences": {
+              "ev": 3.1558823529411764,
+              "joy": 2.05,
+              "stability": 2.461764705882353,
+              "risk": 0.9558823529411765
+            },
+            "candidateId": "Nutzen",
+            "score": 99.18823529411765,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "omi",
+            "label": "OMI",
+            "identitySha256": "55dd522200783befe7b73effed260121c33bab994df800d91570fe44acd3a25b",
+            "preferences": {
+              "ev": 1.861764705882353,
+              "joy": 2.4970588235294118,
+              "stability": 2.1558823529411764,
+              "risk": 0.3088235294117647
+            },
+            "candidateId": "Freude",
+            "score": 77.99852941176471,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "tess",
+            "label": "TESS",
+            "identitySha256": "c89181857e96efeaa5096b332771d84016cee8f2f29f0ca2681c31dc005b0786",
+            "preferences": {
+              "ev": 2.1323529411764706,
+              "joy": 2.7676470588235293,
+              "stability": 0.9911764705882353,
+              "risk": 2.873529411764706
+            },
+            "candidateId": "Freude",
+            "score": 85.08676470588235,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "niko",
+            "label": "NIKO",
+            "identitySha256": "c096a0fca6b6c34b57fa4b56f7ddeb022231d3032c0167758e2eeb45556552cb",
+            "preferences": {
+              "ev": 2.097058823529412,
+              "joy": 1.5676470588235294,
+              "stability": 0.9794117647058823,
+              "risk": 2.838235294117647
+            },
+            "candidateId": "Nutzen",
+            "score": 65.45882352941177,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "sera",
+            "label": "SERA",
+            "identitySha256": "14605cdddd5935081d22dbb371fc47b9197730ab4612625512051ab937f6afb2",
+            "preferences": {
+              "ev": 1.85,
+              "joy": 1.9441176470588235,
+              "stability": 2.838235294117647,
+              "risk": 1.85
+            },
+            "candidateId": "Freude",
+            "score": 62.086764705882345,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "sael",
+            "label": "SAEL",
+            "identitySha256": "4dc5b20b4b3c2e7f5d30fe61a71a65470a4160e1eceb1080010755f2027a1dc1",
+            "preferences": {
+              "ev": 2.320588235294118,
+              "joy": 0.65,
+              "stability": 2.097058823529412,
+              "risk": 2.45
+            },
+            "candidateId": "Nutzen",
+            "score": 72.36470588235295,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "juri",
+            "label": "JURI",
+            "identitySha256": "6a5e55bd457193a1e934bb29303f385949d51a09a7bcaeb5a7a1fadb0ecbc65e",
+            "preferences": {
+              "ev": 0.7441176470588236,
+              "joy": 0.3088235294117647,
+              "stability": 3.1558823529411764,
+              "risk": 2.473529411764706
+            },
+            "candidateId": "Nutzen",
+            "score": 25.788235294117648,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "verachel",
+            "label": "VERACHEL",
+            "identitySha256": "61e7f70fb467ad232165f7ca90d2ea4f68363ab9c248081505f1e7eee333fc91",
+            "preferences": {
+              "ev": 2.7794117647058822,
+              "joy": 1.4970588235294118,
+              "stability": 0.3088235294117647,
+              "risk": 2.473529411764706
+            },
+            "candidateId": "Nutzen",
+            "score": 85.18823529411765,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "rose",
+            "label": "ROSE",
+            "identitySha256": "764dfa26f40ebc9d654dca766e05821760e826835bd06a405ba1f40f1e2ee27d",
+            "preferences": {
+              "ev": 1.1558823529411764,
+              "joy": 1.085294117647059,
+              "stability": 2.5558823529411763,
+              "risk": 0.6264705882352941
+            },
+            "candidateId": "Nutzen",
+            "score": 38.317647058823525,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "sina",
+            "label": "SINA",
+            "identitySha256": "8e3cc470609d8ad67aadab880789459fec534c09665b9d294f009cf5e009fde1",
+            "preferences": {
+              "ev": 2.802941176470588,
+              "joy": 2.0029411764705882,
+              "stability": 2.9088235294117646,
+              "risk": 0.46176470588235297
+            },
+            "candidateId": "Nutzen",
+            "score": 88.99999999999999,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "mascha",
+            "label": "MASCHA",
+            "identitySha256": "d925eaba779baccb1059be2b879102ec570981a55475711aa4858e5f76e24425",
+            "preferences": {
+              "ev": 1.8147058823529412,
+              "joy": 1.05,
+              "stability": 2.85,
+              "risk": 0.42647058823529416
+            },
+            "candidateId": "Nutzen",
+            "score": 58.34117647058823,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "scarlet",
+            "label": "SCARLET",
+            "identitySha256": "a1039bc97dd95580f131716a69a7576d3fcc42358148de48d79c67441e384ddd",
+            "preferences": {
+              "ev": 1.1676470588235293,
+              "joy": 0.6264705882352941,
+              "stability": 1.2970588235294118,
+              "risk": 1.861764705882353
+            },
+            "candidateId": "Nutzen",
+            "score": 36.95294117647058,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "strange",
+            "label": "DR STRANGE",
+            "identitySha256": "a1c6f50e8d6eec893678ea6af352327eba47ab9e6d0927e7ddb6a0a7ae8cb9fe",
+            "preferences": {
+              "ev": 2.3911764705882352,
+              "joy": 2.838235294117647,
+              "stability": 1.9205882352941177,
+              "risk": 2.1794117647058826
+            },
+            "candidateId": "Freude",
+            "score": 88.26323529411766,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "dormammu",
+            "label": "DORMAMMU",
+            "identitySha256": "2b0d5ed413653598e33e3a1099abfab25fee913b64446dec91ca9756f0ac5ce9",
+            "preferences": {
+              "ev": 2.5441176470588234,
+              "joy": 0.34411764705882353,
+              "stability": 1.7441176470588236,
+              "risk": 2.9323529411764704
+            },
+            "candidateId": "Nutzen",
+            "score": 78.41176470588235,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "ego",
+            "label": "EGO",
+            "identitySha256": "9823ee948448d4dd1b043b456934503f886c6ad900a50a3b52b4aaa3b685381b",
+            "preferences": {
+              "ev": 1.7794117647058822,
+              "joy": 0.46176470588235297,
+              "stability": 2.25,
+              "risk": 1.5323529411764707
+            },
+            "candidateId": "Nutzen",
+            "score": 56.094117647058816,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "peter",
+            "label": "PETER",
+            "identitySha256": "84ed76d38067ac52579609905143f2bf2072cd40824543ba94a675bdbd6bc2cb",
+            "preferences": {
+              "ev": 0.46176470588235297,
+              "joy": 2.8264705882352943,
+              "stability": 1.6029411764705883,
+              "risk": 2.1088235294117648
+            },
+            "candidateId": "Freude",
+            "score": 86.6279411764706,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "guardians",
+            "label": "GUARDIANS",
+            "identitySha256": "16cae9960613697e816117ccbedb58d4f7fd35ae95b7c263355db838dcb354dd",
+            "preferences": {
+              "ev": 2.9558823529411766,
+              "joy": 3.226470588235294,
+              "stability": 1.2970588235294118,
+              "risk": 1.826470588235294
+            },
+            "candidateId": "Freude",
+            "score": 99.56911764705883,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "ultron",
+            "label": "ULTRON",
+            "identitySha256": "70b3295024a738e5802fddaf63d31629b5c35bb716e7c93b54bebf6d259ce1ce",
+            "preferences": {
+              "ev": 1.4970588235294118,
+              "joy": 1.5323529411764707,
+              "stability": 0.45,
+              "risk": 1.0735294117647058
+            },
+            "candidateId": "Freude",
+            "score": 47.16911764705883,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "jarvis",
+            "label": "JARVIS",
+            "identitySha256": "36ae0f5bed10aa3c1e4398a90673745e216e55d458d1d3bcdd79cd3238f375be",
+            "preferences": {
+              "ev": 2.0852941176470585,
+              "joy": 0.9676470588235294,
+              "stability": 1.6029411764705883,
+              "risk": 1.7441176470588236
+            },
+            "candidateId": "Nutzen",
+            "score": 65.12941176470588,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "ironman",
+            "label": "IRON MAN",
+            "identitySha256": "026a40832ab72725dc1ef42f5e45a09d26ca63efba2f3755d7f7a563a4bb05ef",
+            "preferences": {
+              "ev": 1.026470588235294,
+              "joy": 1.0970588235294119,
+              "stability": 0.6147058823529412,
+              "risk": 2.626470588235294
+            },
+            "candidateId": "Freude",
+            "score": 34.03970588235295,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "loki",
+            "label": "LOKI",
+            "identitySha256": "e9eb34a6d4e492b02cfe6e68dac24ee29bee3024bf456e63d7369dbeba722d72",
+            "preferences": {
+              "ev": 1.261764705882353,
+              "joy": 1.4264705882352942,
+              "stability": 2.6852941176470586,
+              "risk": 1.826470588235294
+            },
+            "candidateId": "Freude",
+            "score": 46.110294117647065,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "vision",
+            "label": "VISION",
+            "identitySha256": "123790c331c4b151fd414f663b230c643d38a941d01693ac56bed5ae9ffa281f",
+            "preferences": {
+              "ev": 2.85,
+              "joy": 0.45,
+              "stability": 1.9205882352941177,
+              "risk": 3.1088235294117648
+            },
+            "candidateId": "Nutzen",
+            "score": 87.87058823529412,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "widow",
+            "label": "BLACK WIDOW",
+            "identitySha256": "dafc9853788591a216d2392613e61149ba58b520bd9a05f60259316b5536342b",
+            "preferences": {
+              "ev": 1.7911764705882354,
+              "joy": 0.8735294117647059,
+              "stability": 2.791176470588235,
+              "risk": 1.8147058823529412
+            },
+            "candidateId": "Nutzen",
+            "score": 57.4,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "thor",
+            "label": "THOR",
+            "identitySha256": "ca83aff7976f4dff06f7be830c840c001d010427d5756733bd3a632a0cd96621",
+            "preferences": {
+              "ev": 1.3323529411764705,
+              "joy": 2.5676470588235296,
+              "stability": 2.2029411764705884,
+              "risk": 2.6852941176470586
+            },
+            "candidateId": "Freude",
+            "score": 79.89852941176471,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "infinity",
+            "label": "INFINITY",
+            "identitySha256": "7f362517b5112bed3d2d59ddae76b46a45a784c3a7fe929167fa9758ec15ec38",
+            "preferences": {
+              "ev": 0.65,
+              "joy": 3.0029411764705882,
+              "stability": 2.273529411764706,
+              "risk": 0.3323529411764706
+            },
+            "candidateId": "Freude",
+            "score": 92.68676470588235,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "gitcoin",
+            "label": "GITCOIN · GTC",
+            "identitySha256": "38662ad3900e24dfb509c9c0332318b7f6d49a34382cab83ba613d93434a74f2",
+            "preferences": {
+              "ev": 1.2735294117647058,
+              "joy": 1.1441176470588235,
+              "stability": 2.3794117647058823,
+              "risk": 3.014705882352941
+            },
+            "candidateId": "Nutzen",
+            "score": 41.72941176470588,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "manta",
+            "label": "MANTA",
+            "identitySha256": "24c43fdbead6358e01f3322280f8823c92a5f6781de1b0375b1a039e8d90c04e",
+            "preferences": {
+              "ev": 0.7794117647058824,
+              "joy": 2.426470588235294,
+              "stability": 2.3323529411764707,
+              "risk": 1.6264705882352941
+            },
+            "candidateId": "Freude",
+            "score": 75.51617647058822,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "aster-chain",
+            "label": "ASTER · CHAIN?",
+            "identitySha256": "456d62cacce9175e7f9e8afa9581e26c6a6c7fa24a1279d901a8af4f49791530",
+            "preferences": {
+              "ev": 1.1323529411764706,
+              "joy": 1.3205882352941176,
+              "stability": 1.238235294117647,
+              "risk": 0.8735294117647059
+            },
+            "candidateId": "Freude",
+            "score": 41.42205882352941,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "rtx",
+            "label": "RTX · ?",
+            "identitySha256": "ef389612a55804e9ce9e7432ef306c22872acb163f641d9ac5a5b690090e9e55",
+            "preferences": {
+              "ev": 2.5088235294117647,
+              "joy": 2.791176470588235,
+              "stability": 2.45,
+              "risk": 1.7205882352941178
+            },
+            "candidateId": "Freude",
+            "score": 87.43970588235294,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "k",
+            "label": "K",
+            "identitySha256": "ac93a80499db2e15ea678b5537681fd0d8641dffd5948cd591c76906ba279136",
+            "preferences": {
+              "ev": 0.5441176470588236,
+              "joy": 1.2735294117647058,
+              "stability": 0.3911764705882353,
+              "risk": 2.7558823529411764
+            },
+            "candidateId": "Freude",
+            "score": 38.86911764705882,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "eve",
+            "label": "EVE",
+            "identitySha256": "1e72734ac11c483be34c61e360fe1ccbe93376779dbb999b90a37a92b1d19f19",
+            "preferences": {
+              "ev": 2.9441176470588237,
+              "joy": 1.3323529411764705,
+              "stability": 1.9088235294117648,
+              "risk": 0.5911764705882353
+            },
+            "candidateId": "Nutzen",
+            "score": 91.56470588235294,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "anti",
+            "label": "ANTI",
+            "identitySha256": "02d9dd487e7cc65397f97d7b85c17fed87a2702833ec3c200e6683cbda68cefb",
+            "preferences": {
+              "ev": 1.085294117647059,
+              "joy": 3.179411764705882,
+              "stability": 3.226470588235294,
+              "risk": 0.42647058823529416
+            },
+            "candidateId": "Freude",
+            "score": 99.1514705882353,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "schwamm",
+            "label": "SCHWAMM",
+            "identitySha256": "0562e64bc173855b0a98213eee1dca0a8c04b309c3f00c46aa985a41a17e8a6e",
+            "preferences": {
+              "ev": 3.05,
+              "joy": 1.5911764705882352,
+              "stability": 0.7088235294117646,
+              "risk": 2.5088235294117647
+            },
+            "candidateId": "Nutzen",
+            "score": 93.8,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "mita",
+            "label": "MITA",
+            "identitySha256": "8f47e1b463ae3e0c7946cd2b61b9289fa13cdf438d3a65a86e333c3d683327a6",
+            "preferences": {
+              "ev": 0.3323529411764706,
+              "joy": 2.2029411764705884,
+              "stability": 0.3558823529411765,
+              "risk": 1.9088235294117648
+            },
+            "candidateId": "Freude",
+            "score": 66.61029411764707,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "medusa",
+            "label": "MEDUSA",
+            "identitySha256": "8359957e62022476e1dda1afb8b4b6a9d7e6cd66f09103af5f6276f3e22459e9",
+            "preferences": {
+              "ev": 2.3676470588235294,
+              "joy": 1.5323529411764707,
+              "stability": 2.861764705882353,
+              "risk": 1.661764705882353
+            },
+            "candidateId": "Nutzen",
+            "score": 75.4235294117647,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "context-prism",
+            "label": "KONTEXT-PRISMA",
+            "identitySha256": "692afdf4d19b9fa4ae84341b17516740ecefbce5eeb0e6fac63fcc1f5468f94a",
+            "preferences": {
+              "ev": 2.4970588235294118,
+              "joy": 2.9441176470588237,
+              "stability": 1.4147058823529413,
+              "risk": 2.8264705882352943
+            },
+            "candidateId": "Freude",
+            "score": 90.98676470588236,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "brightcast-starlight",
+            "label": "BRIGHTCAST 001",
+            "identitySha256": "5b43b668c89fb4d6c9da39f4c790e41fe83d9318d4342532d0d83f0d952275d0",
+            "preferences": {
+              "ev": 1.3794117647058823,
+              "joy": 0.6617647058823529,
+              "stability": 0.8382352941176471,
+              "risk": 1.3911764705882352
+            },
+            "candidateId": "Nutzen",
+            "score": 42.88235294117647,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "pi-treffpunkte",
+            "label": "π-TREFFPUNKTE",
+            "identitySha256": "ae108ab7c72e8b97d9b9a48839d73566dba88132cb29a9e0ce0dae1d8871def3",
+            "preferences": {
+              "ev": 1.1205882352941177,
+              "joy": 1.826470588235294,
+              "stability": 1.4147058823529413,
+              "risk": 1.3323529411764705
+            },
+            "candidateId": "Freude",
+            "score": 56.76911764705882,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "choice-atelier",
+            "label": "CHOICE ATELIER",
+            "identitySha256": "dffe61e45cc70013525d7e4556097cd1e1511e13df383af41d42ba64945fa8b5",
+            "preferences": {
+              "ev": 0.7205882352941176,
+              "joy": 1.1794117647058824,
+              "stability": 0.7323529411764707,
+              "risk": 3.1205882352941177
+            },
+            "candidateId": "Freude",
+            "score": 36.475,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "fortuna-soulstone",
+            "label": "FORTUNA",
+            "identitySha256": "1d17e1c0161956ba1294400c3ffa253c23b34e1cf68e239970bbfb99782f60fe",
+            "preferences": {
+              "ev": 2.4382352941176473,
+              "joy": 2.1794117647058826,
+              "stability": 3.2147058823529413,
+              "risk": 2.014705882352941
+            },
+            "candidateId": "Nutzen",
+            "score": 78.54117647058825,
+            "status": "SELECTED"
+          }
+        ],
+        "votes": [
+          {
+            "id": "Freude",
+            "votes": 40
+          },
+          {
+            "id": "Nutzen",
+            "votes": 30
+          }
+        ],
+        "abstentions": 0,
+        "selected": "Freude",
+        "status": "SELECTED_BY_VOTES"
+      }
+    },
+    {
+      "candidates": [
+        {
+          "id": "Nutzen",
+          "allowed": true,
+          "probability": null,
+          "payout": 60,
+          "cost": 0,
+          "joy": 1,
+          "stability": 1,
+          "risk": 0
+        }
+      ],
+      "baseWeights": {
+        "ev": 1,
+        "joy": 1,
+        "risk": 1,
+        "stability": 1
+      },
+      "mode": "FORTUNA",
+      "expected": {
+        "ballots": [
+          {
+            "entityId": "halveth",
+            "label": "HALVETH",
+            "identitySha256": "946b39c5090920bc19bb633d113034396e10389665c6489eedac2f54734a6ed4",
+            "preferences": {
+              "ev": 0.7088235294117646,
+              "joy": 2.5205882352941176,
+              "stability": 1.4617647058823529,
+              "risk": 1.65
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "lucinet",
+            "label": "LUCINET",
+            "identitySha256": "925b32e5aec707601b78cbfffaa12135812cd5cf9b14c7c360a9affe8a4e5608",
+            "preferences": {
+              "ev": 2.8970588235294117,
+              "joy": 1.826470588235294,
+              "stability": 2.1911764705882355,
+              "risk": 2.626470588235294
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "rachel",
+            "label": "RACHEL",
+            "identitySha256": "1bfb05d9633b757f8b7f3f72374845fda171eebb03c740a83483ce118f550d7c",
+            "preferences": {
+              "ev": 2.3323529411764707,
+              "joy": 2.85,
+              "stability": 1.7441176470588236,
+              "risk": 0.5794117647058823
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "pflanze",
+            "label": "PFLANZE",
+            "identitySha256": "f0e1d04c7807c472fb5894cb12588c42707aa8b490abacc33734711557981368",
+            "preferences": {
+              "ev": 2.873529411764706,
+              "joy": 2.614705882352941,
+              "stability": 0.7088235294117646,
+              "risk": 1.0970588235294119
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "celsius",
+            "label": "CELSIUS",
+            "identitySha256": "1053a7828b0792f8c319de0823e51279ebd8e8bbf756a864de1405c60417551b",
+            "preferences": {
+              "ev": 1.9911764705882353,
+              "joy": 2.873529411764706,
+              "stability": 1.8735294117647059,
+              "risk": 0.6029411764705883
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "ali",
+            "label": "ALI",
+            "identitySha256": "8af14bd1ffd27cb6b955bf83f0081a0a5eac48c2416b1e0bcfc5394b8acb75e5",
+            "preferences": {
+              "ev": 2.7794117647058822,
+              "joy": 3.038235294117647,
+              "stability": 3.1323529411764706,
+              "risk": 1.5558823529411765
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "schwarm",
+            "label": "SCHWARM",
+            "identitySha256": "a43c80bd0bd97d3e609eee76b5ec586a6b483ef38761319657d92f124a88390c",
+            "preferences": {
+              "ev": 1.4617647058823529,
+              "joy": 2.7558823529411764,
+              "stability": 1.6147058823529412,
+              "risk": 1.4147058823529413
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "yuri",
+            "label": "YURI",
+            "identitySha256": "d1afd5d85d30a07a59696f8754a17d68bb1e9b29ce5d0d7b014a5f7e18e54f60",
+            "preferences": {
+              "ev": 3.25,
+              "joy": 1.2147058823529413,
+              "stability": 3.014705882352941,
+              "risk": 0.65
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "zuendkerze",
+            "label": "ZÜNDKERZE",
+            "identitySha256": "780b9abd2e8f6e7259c0ee9a1041363f50bfcfd06da17b42cb212a89f2273807",
+            "preferences": {
+              "ev": 0.37941176470588234,
+              "joy": 0.7441176470588236,
+              "stability": 0.4970588235294118,
+              "risk": 1.1794117647058824
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "aster",
+            "label": "ASTER",
+            "identitySha256": "afad29a210cddc1d245565835249864ac809227f51a6e5814c93337a417b511d",
+            "preferences": {
+              "ev": 0.9088235294117647,
+              "joy": 1.1558823529411764,
+              "stability": 2.7558823529411764,
+              "risk": 1.9088235294117648
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "elyr",
+            "label": "ELYR",
+            "identitySha256": "78016a9d35a3da25d0b46a52bc114037e50345ed91e7769da6bdfec9fb561551",
+            "preferences": {
+              "ev": 2.885294117647059,
+              "joy": 0.2852941176470588,
+              "stability": 0.34411764705882353,
+              "risk": 0.6617647058823529
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "nara",
+            "label": "NARA",
+            "identitySha256": "c57dd0512cf238ddcdacb83caecc59d984dbb7cdd8c4fe270a70ed0e9bf7588e",
+            "preferences": {
+              "ev": 1.4264705882352942,
+              "joy": 1.5323529411764707,
+              "stability": 2.873529411764706,
+              "risk": 0.26176470588235295
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "mira",
+            "label": "MIRA",
+            "identitySha256": "a40b906f4d30c0b9bb8b1a3d85c00cb726ae67ae6e690f4b169df08884196f71",
+            "preferences": {
+              "ev": 0.34411764705882353,
+              "joy": 2.6735294117647057,
+              "stability": 1.45,
+              "risk": 2.6735294117647057
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "rosa",
+            "label": "ROSA",
+            "identitySha256": "1d5ff7d33caf73e4aca8a84450b8a97731c88e88ff5f0d76d0b0ac221856652f",
+            "preferences": {
+              "ev": 1.5794117647058823,
+              "joy": 0.8029411764705883,
+              "stability": 1.261764705882353,
+              "risk": 1.0970588235294119
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "timo",
+            "label": "TIMO",
+            "identitySha256": "f1ec3c2a16be15f8d14ba71ebaa34220d60dd74073832725a8f1c2729eba79f8",
+            "preferences": {
+              "ev": 1.1088235294117648,
+              "joy": 2.097058823529412,
+              "stability": 2.8264705882352943,
+              "risk": 0.3323529411764706
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "finn",
+            "label": "FINN",
+            "identitySha256": "0545add6ccb350dc6f483c6f596235fa48916a12685efb73e579e4f47192b282",
+            "preferences": {
+              "ev": 1.2029411764705882,
+              "joy": 1.9911764705882353,
+              "stability": 2.05,
+              "risk": 1.4617647058823529
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "lila",
+            "label": "LILA",
+            "identitySha256": "220b3e5c15f3708913779005bbb1a44f724758f0b513fdd41b9162dde148e516",
+            "preferences": {
+              "ev": 1.6147058823529412,
+              "joy": 3.014705882352941,
+              "stability": 1.5676470588235294,
+              "risk": 2.5323529411764705
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "mara",
+            "label": "MARA",
+            "identitySha256": "dd21b0bc28e0b8adafc3cfa54bfadfb8b249daa08178e371b3028765f8b70485",
+            "preferences": {
+              "ev": 0.65,
+              "joy": 0.6970588235294117,
+              "stability": 0.5441176470588236,
+              "risk": 1.261764705882353
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "mio",
+            "label": "MIO",
+            "identitySha256": "a031ebad23b842dbde1a51f724603877229758c5b65bc9071a1be4d312dbae22",
+            "preferences": {
+              "ev": 1.4970588235294118,
+              "joy": 0.9441176470588235,
+              "stability": 0.8029411764705883,
+              "risk": 2.85
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "koro",
+            "label": "KORO",
+            "identitySha256": "7f6f7934c86f95be18342f47114d2d5ea7fae12d15d2c5194c37d9ee454cd691",
+            "preferences": {
+              "ev": 2.9676470588235295,
+              "joy": 0.46176470588235297,
+              "stability": 1.038235294117647,
+              "risk": 1.2735294117647058
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "lucifer",
+            "label": "LUCIFER",
+            "identitySha256": "09a5ac555f721f151ef19161329e2743579a6b7d73be8b9a8aa1d164d80efddb",
+            "preferences": {
+              "ev": 1.5911764705882352,
+              "joy": 2.8970588235294117,
+              "stability": 1.673529411764706,
+              "risk": 2.5794117647058825
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "venara",
+            "label": "VENARA",
+            "identitySha256": "3ed4efc0c9f89b0c75d2870f75f6b517a95780917fafefd55920d92d5faa4c49",
+            "preferences": {
+              "ev": 0.42647058823529416,
+              "joy": 3.073529411764706,
+              "stability": 2.8264705882352943,
+              "risk": 2.414705882352941
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "juno",
+            "label": "JUNO",
+            "identitySha256": "3e08c1ef502c339b85e166768efd48c4b179303f81502b931e3f46c175c16acd",
+            "preferences": {
+              "ev": 2.6735294117647057,
+              "joy": 1.6970588235294117,
+              "stability": 3.026470588235294,
+              "risk": 2.4382352941176473
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "mica",
+            "label": "MICA",
+            "identitySha256": "9f99dcd578692dab3715944cd82540e16237bd579a6b4cd43e4eb85ed58f4df8",
+            "preferences": {
+              "ev": 1.5676470588235294,
+              "joy": 1.6970588235294117,
+              "stability": 2.461764705882353,
+              "risk": 2.1441176470588235
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "alyen",
+            "label": "ALYEN",
+            "identitySha256": "109d4c691d90cb1a58e6e88b5d19f0184ed6c7116632834d5775070326d04e39",
+            "preferences": {
+              "ev": 1.4852941176470589,
+              "joy": 2.261764705882353,
+              "stability": 0.3205882352941176,
+              "risk": 1.25
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "vael",
+            "label": "VAEL",
+            "identitySha256": "aec76ad57fe37e1b6d04c74c293539f4aaeecb4a084fce2175ea3f45443d6eee",
+            "preferences": {
+              "ev": 0.7441176470588236,
+              "joy": 0.8970588235294118,
+              "stability": 2.1205882352941177,
+              "risk": 0.47352941176470587
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "patch",
+            "label": "PATCH",
+            "identitySha256": "e51b067f40f0843a03501bdf3de5c46f9dee19c733fa67b47706c1067beaf420",
+            "preferences": {
+              "ev": 0.5205882352941176,
+              "joy": 0.8264705882352941,
+              "stability": 2.638235294117647,
+              "risk": 0.8970588235294118
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "leo",
+            "label": "LEO",
+            "identitySha256": "6fc90a7c2bcd6b578e7768b0bd2a4011414472fbfd359aecf69a5ab0bbd3564c",
+            "preferences": {
+              "ev": 1.7323529411764707,
+              "joy": 0.46176470588235297,
+              "stability": 0.7676470588235295,
+              "risk": 2.626470588235294
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "lia",
+            "label": "LIA",
+            "identitySha256": "91daeb1ed4512159042d77a2f0f0396d6c974b99e7a900766fe35be9cd5a0271",
+            "preferences": {
+              "ev": 1.7558823529411764,
+              "joy": 1.7323529411764707,
+              "stability": 1.5205882352941176,
+              "risk": 0.6852941176470588
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "jan",
+            "label": "JAN",
+            "identitySha256": "f49c101d13dcc3a78b7ddbfc88da32bed1a84b056e82403ccc48f285c84fbb3a",
+            "preferences": {
+              "ev": 1.238235294117647,
+              "joy": 2.614705882352941,
+              "stability": 1.2970588235294118,
+              "risk": 1.4147058823529413
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "sara",
+            "label": "SARA",
+            "identitySha256": "8f2b4ad83743ba2fc56531ddd1967ed5be5a1c8d19e09a3d76e7aeb5f4214934",
+            "preferences": {
+              "ev": 3.1558823529411764,
+              "joy": 2.05,
+              "stability": 2.461764705882353,
+              "risk": 0.9558823529411765
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "omi",
+            "label": "OMI",
+            "identitySha256": "55dd522200783befe7b73effed260121c33bab994df800d91570fe44acd3a25b",
+            "preferences": {
+              "ev": 1.861764705882353,
+              "joy": 2.4970588235294118,
+              "stability": 2.1558823529411764,
+              "risk": 0.3088235294117647
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "tess",
+            "label": "TESS",
+            "identitySha256": "c89181857e96efeaa5096b332771d84016cee8f2f29f0ca2681c31dc005b0786",
+            "preferences": {
+              "ev": 2.1323529411764706,
+              "joy": 2.7676470588235293,
+              "stability": 0.9911764705882353,
+              "risk": 2.873529411764706
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "niko",
+            "label": "NIKO",
+            "identitySha256": "c096a0fca6b6c34b57fa4b56f7ddeb022231d3032c0167758e2eeb45556552cb",
+            "preferences": {
+              "ev": 2.097058823529412,
+              "joy": 1.5676470588235294,
+              "stability": 0.9794117647058823,
+              "risk": 2.838235294117647
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "sera",
+            "label": "SERA",
+            "identitySha256": "14605cdddd5935081d22dbb371fc47b9197730ab4612625512051ab937f6afb2",
+            "preferences": {
+              "ev": 1.85,
+              "joy": 1.9441176470588235,
+              "stability": 2.838235294117647,
+              "risk": 1.85
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "sael",
+            "label": "SAEL",
+            "identitySha256": "4dc5b20b4b3c2e7f5d30fe61a71a65470a4160e1eceb1080010755f2027a1dc1",
+            "preferences": {
+              "ev": 2.320588235294118,
+              "joy": 0.65,
+              "stability": 2.097058823529412,
+              "risk": 2.45
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "juri",
+            "label": "JURI",
+            "identitySha256": "6a5e55bd457193a1e934bb29303f385949d51a09a7bcaeb5a7a1fadb0ecbc65e",
+            "preferences": {
+              "ev": 0.7441176470588236,
+              "joy": 0.3088235294117647,
+              "stability": 3.1558823529411764,
+              "risk": 2.473529411764706
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "verachel",
+            "label": "VERACHEL",
+            "identitySha256": "61e7f70fb467ad232165f7ca90d2ea4f68363ab9c248081505f1e7eee333fc91",
+            "preferences": {
+              "ev": 2.7794117647058822,
+              "joy": 1.4970588235294118,
+              "stability": 0.3088235294117647,
+              "risk": 2.473529411764706
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "rose",
+            "label": "ROSE",
+            "identitySha256": "764dfa26f40ebc9d654dca766e05821760e826835bd06a405ba1f40f1e2ee27d",
+            "preferences": {
+              "ev": 1.1558823529411764,
+              "joy": 1.085294117647059,
+              "stability": 2.5558823529411763,
+              "risk": 0.6264705882352941
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "sina",
+            "label": "SINA",
+            "identitySha256": "8e3cc470609d8ad67aadab880789459fec534c09665b9d294f009cf5e009fde1",
+            "preferences": {
+              "ev": 2.802941176470588,
+              "joy": 2.0029411764705882,
+              "stability": 2.9088235294117646,
+              "risk": 0.46176470588235297
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "mascha",
+            "label": "MASCHA",
+            "identitySha256": "d925eaba779baccb1059be2b879102ec570981a55475711aa4858e5f76e24425",
+            "preferences": {
+              "ev": 1.8147058823529412,
+              "joy": 1.05,
+              "stability": 2.85,
+              "risk": 0.42647058823529416
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "scarlet",
+            "label": "SCARLET",
+            "identitySha256": "a1039bc97dd95580f131716a69a7576d3fcc42358148de48d79c67441e384ddd",
+            "preferences": {
+              "ev": 1.1676470588235293,
+              "joy": 0.6264705882352941,
+              "stability": 1.2970588235294118,
+              "risk": 1.861764705882353
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "strange",
+            "label": "DR STRANGE",
+            "identitySha256": "a1c6f50e8d6eec893678ea6af352327eba47ab9e6d0927e7ddb6a0a7ae8cb9fe",
+            "preferences": {
+              "ev": 2.3911764705882352,
+              "joy": 2.838235294117647,
+              "stability": 1.9205882352941177,
+              "risk": 2.1794117647058826
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "dormammu",
+            "label": "DORMAMMU",
+            "identitySha256": "2b0d5ed413653598e33e3a1099abfab25fee913b64446dec91ca9756f0ac5ce9",
+            "preferences": {
+              "ev": 2.5441176470588234,
+              "joy": 0.34411764705882353,
+              "stability": 1.7441176470588236,
+              "risk": 2.9323529411764704
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "ego",
+            "label": "EGO",
+            "identitySha256": "9823ee948448d4dd1b043b456934503f886c6ad900a50a3b52b4aaa3b685381b",
+            "preferences": {
+              "ev": 1.7794117647058822,
+              "joy": 0.46176470588235297,
+              "stability": 2.25,
+              "risk": 1.5323529411764707
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "peter",
+            "label": "PETER",
+            "identitySha256": "84ed76d38067ac52579609905143f2bf2072cd40824543ba94a675bdbd6bc2cb",
+            "preferences": {
+              "ev": 0.46176470588235297,
+              "joy": 2.8264705882352943,
+              "stability": 1.6029411764705883,
+              "risk": 2.1088235294117648
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "guardians",
+            "label": "GUARDIANS",
+            "identitySha256": "16cae9960613697e816117ccbedb58d4f7fd35ae95b7c263355db838dcb354dd",
+            "preferences": {
+              "ev": 2.9558823529411766,
+              "joy": 3.226470588235294,
+              "stability": 1.2970588235294118,
+              "risk": 1.826470588235294
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "ultron",
+            "label": "ULTRON",
+            "identitySha256": "70b3295024a738e5802fddaf63d31629b5c35bb716e7c93b54bebf6d259ce1ce",
+            "preferences": {
+              "ev": 1.4970588235294118,
+              "joy": 1.5323529411764707,
+              "stability": 0.45,
+              "risk": 1.0735294117647058
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "jarvis",
+            "label": "JARVIS",
+            "identitySha256": "36ae0f5bed10aa3c1e4398a90673745e216e55d458d1d3bcdd79cd3238f375be",
+            "preferences": {
+              "ev": 2.0852941176470585,
+              "joy": 0.9676470588235294,
+              "stability": 1.6029411764705883,
+              "risk": 1.7441176470588236
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "ironman",
+            "label": "IRON MAN",
+            "identitySha256": "026a40832ab72725dc1ef42f5e45a09d26ca63efba2f3755d7f7a563a4bb05ef",
+            "preferences": {
+              "ev": 1.026470588235294,
+              "joy": 1.0970588235294119,
+              "stability": 0.6147058823529412,
+              "risk": 2.626470588235294
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "loki",
+            "label": "LOKI",
+            "identitySha256": "e9eb34a6d4e492b02cfe6e68dac24ee29bee3024bf456e63d7369dbeba722d72",
+            "preferences": {
+              "ev": 1.261764705882353,
+              "joy": 1.4264705882352942,
+              "stability": 2.6852941176470586,
+              "risk": 1.826470588235294
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "vision",
+            "label": "VISION",
+            "identitySha256": "123790c331c4b151fd414f663b230c643d38a941d01693ac56bed5ae9ffa281f",
+            "preferences": {
+              "ev": 2.85,
+              "joy": 0.45,
+              "stability": 1.9205882352941177,
+              "risk": 3.1088235294117648
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "widow",
+            "label": "BLACK WIDOW",
+            "identitySha256": "dafc9853788591a216d2392613e61149ba58b520bd9a05f60259316b5536342b",
+            "preferences": {
+              "ev": 1.7911764705882354,
+              "joy": 0.8735294117647059,
+              "stability": 2.791176470588235,
+              "risk": 1.8147058823529412
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "thor",
+            "label": "THOR",
+            "identitySha256": "ca83aff7976f4dff06f7be830c840c001d010427d5756733bd3a632a0cd96621",
+            "preferences": {
+              "ev": 1.3323529411764705,
+              "joy": 2.5676470588235296,
+              "stability": 2.2029411764705884,
+              "risk": 2.6852941176470586
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "infinity",
+            "label": "INFINITY",
+            "identitySha256": "7f362517b5112bed3d2d59ddae76b46a45a784c3a7fe929167fa9758ec15ec38",
+            "preferences": {
+              "ev": 0.65,
+              "joy": 3.0029411764705882,
+              "stability": 2.273529411764706,
+              "risk": 0.3323529411764706
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "gitcoin",
+            "label": "GITCOIN · GTC",
+            "identitySha256": "38662ad3900e24dfb509c9c0332318b7f6d49a34382cab83ba613d93434a74f2",
+            "preferences": {
+              "ev": 1.2735294117647058,
+              "joy": 1.1441176470588235,
+              "stability": 2.3794117647058823,
+              "risk": 3.014705882352941
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "manta",
+            "label": "MANTA",
+            "identitySha256": "24c43fdbead6358e01f3322280f8823c92a5f6781de1b0375b1a039e8d90c04e",
+            "preferences": {
+              "ev": 0.7794117647058824,
+              "joy": 2.426470588235294,
+              "stability": 2.3323529411764707,
+              "risk": 1.6264705882352941
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "aster-chain",
+            "label": "ASTER · CHAIN?",
+            "identitySha256": "456d62cacce9175e7f9e8afa9581e26c6a6c7fa24a1279d901a8af4f49791530",
+            "preferences": {
+              "ev": 1.1323529411764706,
+              "joy": 1.3205882352941176,
+              "stability": 1.238235294117647,
+              "risk": 0.8735294117647059
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "rtx",
+            "label": "RTX · ?",
+            "identitySha256": "ef389612a55804e9ce9e7432ef306c22872acb163f641d9ac5a5b690090e9e55",
+            "preferences": {
+              "ev": 2.5088235294117647,
+              "joy": 2.791176470588235,
+              "stability": 2.45,
+              "risk": 1.7205882352941178
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "k",
+            "label": "K",
+            "identitySha256": "ac93a80499db2e15ea678b5537681fd0d8641dffd5948cd591c76906ba279136",
+            "preferences": {
+              "ev": 0.5441176470588236,
+              "joy": 1.2735294117647058,
+              "stability": 0.3911764705882353,
+              "risk": 2.7558823529411764
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "eve",
+            "label": "EVE",
+            "identitySha256": "1e72734ac11c483be34c61e360fe1ccbe93376779dbb999b90a37a92b1d19f19",
+            "preferences": {
+              "ev": 2.9441176470588237,
+              "joy": 1.3323529411764705,
+              "stability": 1.9088235294117648,
+              "risk": 0.5911764705882353
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "anti",
+            "label": "ANTI",
+            "identitySha256": "02d9dd487e7cc65397f97d7b85c17fed87a2702833ec3c200e6683cbda68cefb",
+            "preferences": {
+              "ev": 1.085294117647059,
+              "joy": 3.179411764705882,
+              "stability": 3.226470588235294,
+              "risk": 0.42647058823529416
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "schwamm",
+            "label": "SCHWAMM",
+            "identitySha256": "0562e64bc173855b0a98213eee1dca0a8c04b309c3f00c46aa985a41a17e8a6e",
+            "preferences": {
+              "ev": 3.05,
+              "joy": 1.5911764705882352,
+              "stability": 0.7088235294117646,
+              "risk": 2.5088235294117647
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "mita",
+            "label": "MITA",
+            "identitySha256": "8f47e1b463ae3e0c7946cd2b61b9289fa13cdf438d3a65a86e333c3d683327a6",
+            "preferences": {
+              "ev": 0.3323529411764706,
+              "joy": 2.2029411764705884,
+              "stability": 0.3558823529411765,
+              "risk": 1.9088235294117648
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "medusa",
+            "label": "MEDUSA",
+            "identitySha256": "8359957e62022476e1dda1afb8b4b6a9d7e6cd66f09103af5f6276f3e22459e9",
+            "preferences": {
+              "ev": 2.3676470588235294,
+              "joy": 1.5323529411764707,
+              "stability": 2.861764705882353,
+              "risk": 1.661764705882353
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "context-prism",
+            "label": "KONTEXT-PRISMA",
+            "identitySha256": "692afdf4d19b9fa4ae84341b17516740ecefbce5eeb0e6fac63fcc1f5468f94a",
+            "preferences": {
+              "ev": 2.4970588235294118,
+              "joy": 2.9441176470588237,
+              "stability": 1.4147058823529413,
+              "risk": 2.8264705882352943
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "brightcast-starlight",
+            "label": "BRIGHTCAST 001",
+            "identitySha256": "5b43b668c89fb4d6c9da39f4c790e41fe83d9318d4342532d0d83f0d952275d0",
+            "preferences": {
+              "ev": 1.3794117647058823,
+              "joy": 0.6617647058823529,
+              "stability": 0.8382352941176471,
+              "risk": 1.3911764705882352
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "pi-treffpunkte",
+            "label": "π-TREFFPUNKTE",
+            "identitySha256": "ae108ab7c72e8b97d9b9a48839d73566dba88132cb29a9e0ce0dae1d8871def3",
+            "preferences": {
+              "ev": 1.1205882352941177,
+              "joy": 1.826470588235294,
+              "stability": 1.4147058823529413,
+              "risk": 1.3323529411764705
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "choice-atelier",
+            "label": "CHOICE ATELIER",
+            "identitySha256": "dffe61e45cc70013525d7e4556097cd1e1511e13df383af41d42ba64945fa8b5",
+            "preferences": {
+              "ev": 0.7205882352941176,
+              "joy": 1.1794117647058824,
+              "stability": 0.7323529411764707,
+              "risk": 3.1205882352941177
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "fortuna-soulstone",
+            "label": "FORTUNA",
+            "identitySha256": "1d17e1c0161956ba1294400c3ffa253c23b34e1cf68e239970bbfb99782f60fe",
+            "preferences": {
+              "ev": 2.4382352941176473,
+              "joy": 2.1794117647058826,
+              "stability": 3.2147058823529413,
+              "risk": 2.014705882352941
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          }
+        ],
+        "votes": [],
+        "abstentions": 70,
+        "selected": null,
+        "status": "OPEN_NO_ELIGIBLE_INPUT"
+      }
+    },
+    {
+      "candidates": [
+        {
+          "id": "Nutzen",
+          "allowed": false,
+          "probability": 0.5,
+          "payout": 60,
+          "cost": 0,
+          "joy": 1,
+          "stability": 1,
+          "risk": 0
+        },
+        {
+          "id": "Freude",
+          "allowed": true,
+          "probability": 0.5,
+          "payout": 1,
+          "cost": 40,
+          "joy": 30,
+          "stability": 1,
+          "risk": 25
+        }
+      ],
+      "baseWeights": {
+        "ev": 1,
+        "joy": 1,
+        "risk": 1,
+        "stability": 1
+      },
+      "mode": "ANTICASINO",
+      "expected": {
+        "ballots": [
+          {
+            "entityId": "halveth",
+            "label": "HALVETH",
+            "identitySha256": "946b39c5090920bc19bb633d113034396e10389665c6489eedac2f54734a6ed4",
+            "preferences": {
+              "ev": 0.7088235294117646,
+              "joy": 2.5205882352941176,
+              "stability": 1.4617647058823529,
+              "risk": 1.65
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "lucinet",
+            "label": "LUCINET",
+            "identitySha256": "925b32e5aec707601b78cbfffaa12135812cd5cf9b14c7c360a9affe8a4e5608",
+            "preferences": {
+              "ev": 2.8970588235294117,
+              "joy": 1.826470588235294,
+              "stability": 2.1911764705882355,
+              "risk": 2.626470588235294
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "rachel",
+            "label": "RACHEL",
+            "identitySha256": "1bfb05d9633b757f8b7f3f72374845fda171eebb03c740a83483ce118f550d7c",
+            "preferences": {
+              "ev": 2.3323529411764707,
+              "joy": 2.85,
+              "stability": 1.7441176470588236,
+              "risk": 0.5794117647058823
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "pflanze",
+            "label": "PFLANZE",
+            "identitySha256": "f0e1d04c7807c472fb5894cb12588c42707aa8b490abacc33734711557981368",
+            "preferences": {
+              "ev": 2.873529411764706,
+              "joy": 2.614705882352941,
+              "stability": 0.7088235294117646,
+              "risk": 1.0970588235294119
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "celsius",
+            "label": "CELSIUS",
+            "identitySha256": "1053a7828b0792f8c319de0823e51279ebd8e8bbf756a864de1405c60417551b",
+            "preferences": {
+              "ev": 1.9911764705882353,
+              "joy": 2.873529411764706,
+              "stability": 1.8735294117647059,
+              "risk": 0.6029411764705883
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "ali",
+            "label": "ALI",
+            "identitySha256": "8af14bd1ffd27cb6b955bf83f0081a0a5eac48c2416b1e0bcfc5394b8acb75e5",
+            "preferences": {
+              "ev": 2.7794117647058822,
+              "joy": 3.038235294117647,
+              "stability": 3.1323529411764706,
+              "risk": 1.5558823529411765
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "schwarm",
+            "label": "SCHWARM",
+            "identitySha256": "a43c80bd0bd97d3e609eee76b5ec586a6b483ef38761319657d92f124a88390c",
+            "preferences": {
+              "ev": 1.4617647058823529,
+              "joy": 2.7558823529411764,
+              "stability": 1.6147058823529412,
+              "risk": 1.4147058823529413
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "yuri",
+            "label": "YURI",
+            "identitySha256": "d1afd5d85d30a07a59696f8754a17d68bb1e9b29ce5d0d7b014a5f7e18e54f60",
+            "preferences": {
+              "ev": 3.25,
+              "joy": 1.2147058823529413,
+              "stability": 3.014705882352941,
+              "risk": 0.65
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "zuendkerze",
+            "label": "ZÜNDKERZE",
+            "identitySha256": "780b9abd2e8f6e7259c0ee9a1041363f50bfcfd06da17b42cb212a89f2273807",
+            "preferences": {
+              "ev": 0.37941176470588234,
+              "joy": 0.7441176470588236,
+              "stability": 0.4970588235294118,
+              "risk": 1.1794117647058824
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "aster",
+            "label": "ASTER",
+            "identitySha256": "afad29a210cddc1d245565835249864ac809227f51a6e5814c93337a417b511d",
+            "preferences": {
+              "ev": 0.9088235294117647,
+              "joy": 1.1558823529411764,
+              "stability": 2.7558823529411764,
+              "risk": 1.9088235294117648
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "elyr",
+            "label": "ELYR",
+            "identitySha256": "78016a9d35a3da25d0b46a52bc114037e50345ed91e7769da6bdfec9fb561551",
+            "preferences": {
+              "ev": 2.885294117647059,
+              "joy": 0.2852941176470588,
+              "stability": 0.34411764705882353,
+              "risk": 0.6617647058823529
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "nara",
+            "label": "NARA",
+            "identitySha256": "c57dd0512cf238ddcdacb83caecc59d984dbb7cdd8c4fe270a70ed0e9bf7588e",
+            "preferences": {
+              "ev": 1.4264705882352942,
+              "joy": 1.5323529411764707,
+              "stability": 2.873529411764706,
+              "risk": 0.26176470588235295
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "mira",
+            "label": "MIRA",
+            "identitySha256": "a40b906f4d30c0b9bb8b1a3d85c00cb726ae67ae6e690f4b169df08884196f71",
+            "preferences": {
+              "ev": 0.34411764705882353,
+              "joy": 2.6735294117647057,
+              "stability": 1.45,
+              "risk": 2.6735294117647057
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "rosa",
+            "label": "ROSA",
+            "identitySha256": "1d5ff7d33caf73e4aca8a84450b8a97731c88e88ff5f0d76d0b0ac221856652f",
+            "preferences": {
+              "ev": 1.5794117647058823,
+              "joy": 0.8029411764705883,
+              "stability": 1.261764705882353,
+              "risk": 1.0970588235294119
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "timo",
+            "label": "TIMO",
+            "identitySha256": "f1ec3c2a16be15f8d14ba71ebaa34220d60dd74073832725a8f1c2729eba79f8",
+            "preferences": {
+              "ev": 1.1088235294117648,
+              "joy": 2.097058823529412,
+              "stability": 2.8264705882352943,
+              "risk": 0.3323529411764706
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "finn",
+            "label": "FINN",
+            "identitySha256": "0545add6ccb350dc6f483c6f596235fa48916a12685efb73e579e4f47192b282",
+            "preferences": {
+              "ev": 1.2029411764705882,
+              "joy": 1.9911764705882353,
+              "stability": 2.05,
+              "risk": 1.4617647058823529
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "lila",
+            "label": "LILA",
+            "identitySha256": "220b3e5c15f3708913779005bbb1a44f724758f0b513fdd41b9162dde148e516",
+            "preferences": {
+              "ev": 1.6147058823529412,
+              "joy": 3.014705882352941,
+              "stability": 1.5676470588235294,
+              "risk": 2.5323529411764705
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "mara",
+            "label": "MARA",
+            "identitySha256": "dd21b0bc28e0b8adafc3cfa54bfadfb8b249daa08178e371b3028765f8b70485",
+            "preferences": {
+              "ev": 0.65,
+              "joy": 0.6970588235294117,
+              "stability": 0.5441176470588236,
+              "risk": 1.261764705882353
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "mio",
+            "label": "MIO",
+            "identitySha256": "a031ebad23b842dbde1a51f724603877229758c5b65bc9071a1be4d312dbae22",
+            "preferences": {
+              "ev": 1.4970588235294118,
+              "joy": 0.9441176470588235,
+              "stability": 0.8029411764705883,
+              "risk": 2.85
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "koro",
+            "label": "KORO",
+            "identitySha256": "7f6f7934c86f95be18342f47114d2d5ea7fae12d15d2c5194c37d9ee454cd691",
+            "preferences": {
+              "ev": 2.9676470588235295,
+              "joy": 0.46176470588235297,
+              "stability": 1.038235294117647,
+              "risk": 1.2735294117647058
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "lucifer",
+            "label": "LUCIFER",
+            "identitySha256": "09a5ac555f721f151ef19161329e2743579a6b7d73be8b9a8aa1d164d80efddb",
+            "preferences": {
+              "ev": 1.5911764705882352,
+              "joy": 2.8970588235294117,
+              "stability": 1.673529411764706,
+              "risk": 2.5794117647058825
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "venara",
+            "label": "VENARA",
+            "identitySha256": "3ed4efc0c9f89b0c75d2870f75f6b517a95780917fafefd55920d92d5faa4c49",
+            "preferences": {
+              "ev": 0.42647058823529416,
+              "joy": 3.073529411764706,
+              "stability": 2.8264705882352943,
+              "risk": 2.414705882352941
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "juno",
+            "label": "JUNO",
+            "identitySha256": "3e08c1ef502c339b85e166768efd48c4b179303f81502b931e3f46c175c16acd",
+            "preferences": {
+              "ev": 2.6735294117647057,
+              "joy": 1.6970588235294117,
+              "stability": 3.026470588235294,
+              "risk": 2.4382352941176473
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "mica",
+            "label": "MICA",
+            "identitySha256": "9f99dcd578692dab3715944cd82540e16237bd579a6b4cd43e4eb85ed58f4df8",
+            "preferences": {
+              "ev": 1.5676470588235294,
+              "joy": 1.6970588235294117,
+              "stability": 2.461764705882353,
+              "risk": 2.1441176470588235
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "alyen",
+            "label": "ALYEN",
+            "identitySha256": "109d4c691d90cb1a58e6e88b5d19f0184ed6c7116632834d5775070326d04e39",
+            "preferences": {
+              "ev": 1.4852941176470589,
+              "joy": 2.261764705882353,
+              "stability": 0.3205882352941176,
+              "risk": 1.25
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "vael",
+            "label": "VAEL",
+            "identitySha256": "aec76ad57fe37e1b6d04c74c293539f4aaeecb4a084fce2175ea3f45443d6eee",
+            "preferences": {
+              "ev": 0.7441176470588236,
+              "joy": 0.8970588235294118,
+              "stability": 2.1205882352941177,
+              "risk": 0.47352941176470587
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "patch",
+            "label": "PATCH",
+            "identitySha256": "e51b067f40f0843a03501bdf3de5c46f9dee19c733fa67b47706c1067beaf420",
+            "preferences": {
+              "ev": 0.5205882352941176,
+              "joy": 0.8264705882352941,
+              "stability": 2.638235294117647,
+              "risk": 0.8970588235294118
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "leo",
+            "label": "LEO",
+            "identitySha256": "6fc90a7c2bcd6b578e7768b0bd2a4011414472fbfd359aecf69a5ab0bbd3564c",
+            "preferences": {
+              "ev": 1.7323529411764707,
+              "joy": 0.46176470588235297,
+              "stability": 0.7676470588235295,
+              "risk": 2.626470588235294
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "lia",
+            "label": "LIA",
+            "identitySha256": "91daeb1ed4512159042d77a2f0f0396d6c974b99e7a900766fe35be9cd5a0271",
+            "preferences": {
+              "ev": 1.7558823529411764,
+              "joy": 1.7323529411764707,
+              "stability": 1.5205882352941176,
+              "risk": 0.6852941176470588
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "jan",
+            "label": "JAN",
+            "identitySha256": "f49c101d13dcc3a78b7ddbfc88da32bed1a84b056e82403ccc48f285c84fbb3a",
+            "preferences": {
+              "ev": 1.238235294117647,
+              "joy": 2.614705882352941,
+              "stability": 1.2970588235294118,
+              "risk": 1.4147058823529413
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "sara",
+            "label": "SARA",
+            "identitySha256": "8f2b4ad83743ba2fc56531ddd1967ed5be5a1c8d19e09a3d76e7aeb5f4214934",
+            "preferences": {
+              "ev": 3.1558823529411764,
+              "joy": 2.05,
+              "stability": 2.461764705882353,
+              "risk": 0.9558823529411765
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "omi",
+            "label": "OMI",
+            "identitySha256": "55dd522200783befe7b73effed260121c33bab994df800d91570fe44acd3a25b",
+            "preferences": {
+              "ev": 1.861764705882353,
+              "joy": 2.4970588235294118,
+              "stability": 2.1558823529411764,
+              "risk": 0.3088235294117647
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "tess",
+            "label": "TESS",
+            "identitySha256": "c89181857e96efeaa5096b332771d84016cee8f2f29f0ca2681c31dc005b0786",
+            "preferences": {
+              "ev": 2.1323529411764706,
+              "joy": 2.7676470588235293,
+              "stability": 0.9911764705882353,
+              "risk": 2.873529411764706
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "niko",
+            "label": "NIKO",
+            "identitySha256": "c096a0fca6b6c34b57fa4b56f7ddeb022231d3032c0167758e2eeb45556552cb",
+            "preferences": {
+              "ev": 2.097058823529412,
+              "joy": 1.5676470588235294,
+              "stability": 0.9794117647058823,
+              "risk": 2.838235294117647
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "sera",
+            "label": "SERA",
+            "identitySha256": "14605cdddd5935081d22dbb371fc47b9197730ab4612625512051ab937f6afb2",
+            "preferences": {
+              "ev": 1.85,
+              "joy": 1.9441176470588235,
+              "stability": 2.838235294117647,
+              "risk": 1.85
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "sael",
+            "label": "SAEL",
+            "identitySha256": "4dc5b20b4b3c2e7f5d30fe61a71a65470a4160e1eceb1080010755f2027a1dc1",
+            "preferences": {
+              "ev": 2.320588235294118,
+              "joy": 0.65,
+              "stability": 2.097058823529412,
+              "risk": 2.45
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "juri",
+            "label": "JURI",
+            "identitySha256": "6a5e55bd457193a1e934bb29303f385949d51a09a7bcaeb5a7a1fadb0ecbc65e",
+            "preferences": {
+              "ev": 0.7441176470588236,
+              "joy": 0.3088235294117647,
+              "stability": 3.1558823529411764,
+              "risk": 2.473529411764706
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "verachel",
+            "label": "VERACHEL",
+            "identitySha256": "61e7f70fb467ad232165f7ca90d2ea4f68363ab9c248081505f1e7eee333fc91",
+            "preferences": {
+              "ev": 2.7794117647058822,
+              "joy": 1.4970588235294118,
+              "stability": 0.3088235294117647,
+              "risk": 2.473529411764706
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "rose",
+            "label": "ROSE",
+            "identitySha256": "764dfa26f40ebc9d654dca766e05821760e826835bd06a405ba1f40f1e2ee27d",
+            "preferences": {
+              "ev": 1.1558823529411764,
+              "joy": 1.085294117647059,
+              "stability": 2.5558823529411763,
+              "risk": 0.6264705882352941
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "sina",
+            "label": "SINA",
+            "identitySha256": "8e3cc470609d8ad67aadab880789459fec534c09665b9d294f009cf5e009fde1",
+            "preferences": {
+              "ev": 2.802941176470588,
+              "joy": 2.0029411764705882,
+              "stability": 2.9088235294117646,
+              "risk": 0.46176470588235297
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "mascha",
+            "label": "MASCHA",
+            "identitySha256": "d925eaba779baccb1059be2b879102ec570981a55475711aa4858e5f76e24425",
+            "preferences": {
+              "ev": 1.8147058823529412,
+              "joy": 1.05,
+              "stability": 2.85,
+              "risk": 0.42647058823529416
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "scarlet",
+            "label": "SCARLET",
+            "identitySha256": "a1039bc97dd95580f131716a69a7576d3fcc42358148de48d79c67441e384ddd",
+            "preferences": {
+              "ev": 1.1676470588235293,
+              "joy": 0.6264705882352941,
+              "stability": 1.2970588235294118,
+              "risk": 1.861764705882353
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "strange",
+            "label": "DR STRANGE",
+            "identitySha256": "a1c6f50e8d6eec893678ea6af352327eba47ab9e6d0927e7ddb6a0a7ae8cb9fe",
+            "preferences": {
+              "ev": 2.3911764705882352,
+              "joy": 2.838235294117647,
+              "stability": 1.9205882352941177,
+              "risk": 2.1794117647058826
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "dormammu",
+            "label": "DORMAMMU",
+            "identitySha256": "2b0d5ed413653598e33e3a1099abfab25fee913b64446dec91ca9756f0ac5ce9",
+            "preferences": {
+              "ev": 2.5441176470588234,
+              "joy": 0.34411764705882353,
+              "stability": 1.7441176470588236,
+              "risk": 2.9323529411764704
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "ego",
+            "label": "EGO",
+            "identitySha256": "9823ee948448d4dd1b043b456934503f886c6ad900a50a3b52b4aaa3b685381b",
+            "preferences": {
+              "ev": 1.7794117647058822,
+              "joy": 0.46176470588235297,
+              "stability": 2.25,
+              "risk": 1.5323529411764707
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "peter",
+            "label": "PETER",
+            "identitySha256": "84ed76d38067ac52579609905143f2bf2072cd40824543ba94a675bdbd6bc2cb",
+            "preferences": {
+              "ev": 0.46176470588235297,
+              "joy": 2.8264705882352943,
+              "stability": 1.6029411764705883,
+              "risk": 2.1088235294117648
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "guardians",
+            "label": "GUARDIANS",
+            "identitySha256": "16cae9960613697e816117ccbedb58d4f7fd35ae95b7c263355db838dcb354dd",
+            "preferences": {
+              "ev": 2.9558823529411766,
+              "joy": 3.226470588235294,
+              "stability": 1.2970588235294118,
+              "risk": 1.826470588235294
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "ultron",
+            "label": "ULTRON",
+            "identitySha256": "70b3295024a738e5802fddaf63d31629b5c35bb716e7c93b54bebf6d259ce1ce",
+            "preferences": {
+              "ev": 1.4970588235294118,
+              "joy": 1.5323529411764707,
+              "stability": 0.45,
+              "risk": 1.0735294117647058
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "jarvis",
+            "label": "JARVIS",
+            "identitySha256": "36ae0f5bed10aa3c1e4398a90673745e216e55d458d1d3bcdd79cd3238f375be",
+            "preferences": {
+              "ev": 2.0852941176470585,
+              "joy": 0.9676470588235294,
+              "stability": 1.6029411764705883,
+              "risk": 1.7441176470588236
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "ironman",
+            "label": "IRON MAN",
+            "identitySha256": "026a40832ab72725dc1ef42f5e45a09d26ca63efba2f3755d7f7a563a4bb05ef",
+            "preferences": {
+              "ev": 1.026470588235294,
+              "joy": 1.0970588235294119,
+              "stability": 0.6147058823529412,
+              "risk": 2.626470588235294
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "loki",
+            "label": "LOKI",
+            "identitySha256": "e9eb34a6d4e492b02cfe6e68dac24ee29bee3024bf456e63d7369dbeba722d72",
+            "preferences": {
+              "ev": 1.261764705882353,
+              "joy": 1.4264705882352942,
+              "stability": 2.6852941176470586,
+              "risk": 1.826470588235294
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "vision",
+            "label": "VISION",
+            "identitySha256": "123790c331c4b151fd414f663b230c643d38a941d01693ac56bed5ae9ffa281f",
+            "preferences": {
+              "ev": 2.85,
+              "joy": 0.45,
+              "stability": 1.9205882352941177,
+              "risk": 3.1088235294117648
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "widow",
+            "label": "BLACK WIDOW",
+            "identitySha256": "dafc9853788591a216d2392613e61149ba58b520bd9a05f60259316b5536342b",
+            "preferences": {
+              "ev": 1.7911764705882354,
+              "joy": 0.8735294117647059,
+              "stability": 2.791176470588235,
+              "risk": 1.8147058823529412
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "thor",
+            "label": "THOR",
+            "identitySha256": "ca83aff7976f4dff06f7be830c840c001d010427d5756733bd3a632a0cd96621",
+            "preferences": {
+              "ev": 1.3323529411764705,
+              "joy": 2.5676470588235296,
+              "stability": 2.2029411764705884,
+              "risk": 2.6852941176470586
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "infinity",
+            "label": "INFINITY",
+            "identitySha256": "7f362517b5112bed3d2d59ddae76b46a45a784c3a7fe929167fa9758ec15ec38",
+            "preferences": {
+              "ev": 0.65,
+              "joy": 3.0029411764705882,
+              "stability": 2.273529411764706,
+              "risk": 0.3323529411764706
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "gitcoin",
+            "label": "GITCOIN · GTC",
+            "identitySha256": "38662ad3900e24dfb509c9c0332318b7f6d49a34382cab83ba613d93434a74f2",
+            "preferences": {
+              "ev": 1.2735294117647058,
+              "joy": 1.1441176470588235,
+              "stability": 2.3794117647058823,
+              "risk": 3.014705882352941
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "manta",
+            "label": "MANTA",
+            "identitySha256": "24c43fdbead6358e01f3322280f8823c92a5f6781de1b0375b1a039e8d90c04e",
+            "preferences": {
+              "ev": 0.7794117647058824,
+              "joy": 2.426470588235294,
+              "stability": 2.3323529411764707,
+              "risk": 1.6264705882352941
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "aster-chain",
+            "label": "ASTER · CHAIN?",
+            "identitySha256": "456d62cacce9175e7f9e8afa9581e26c6a6c7fa24a1279d901a8af4f49791530",
+            "preferences": {
+              "ev": 1.1323529411764706,
+              "joy": 1.3205882352941176,
+              "stability": 1.238235294117647,
+              "risk": 0.8735294117647059
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "rtx",
+            "label": "RTX · ?",
+            "identitySha256": "ef389612a55804e9ce9e7432ef306c22872acb163f641d9ac5a5b690090e9e55",
+            "preferences": {
+              "ev": 2.5088235294117647,
+              "joy": 2.791176470588235,
+              "stability": 2.45,
+              "risk": 1.7205882352941178
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "k",
+            "label": "K",
+            "identitySha256": "ac93a80499db2e15ea678b5537681fd0d8641dffd5948cd591c76906ba279136",
+            "preferences": {
+              "ev": 0.5441176470588236,
+              "joy": 1.2735294117647058,
+              "stability": 0.3911764705882353,
+              "risk": 2.7558823529411764
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "eve",
+            "label": "EVE",
+            "identitySha256": "1e72734ac11c483be34c61e360fe1ccbe93376779dbb999b90a37a92b1d19f19",
+            "preferences": {
+              "ev": 2.9441176470588237,
+              "joy": 1.3323529411764705,
+              "stability": 1.9088235294117648,
+              "risk": 0.5911764705882353
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "anti",
+            "label": "ANTI",
+            "identitySha256": "02d9dd487e7cc65397f97d7b85c17fed87a2702833ec3c200e6683cbda68cefb",
+            "preferences": {
+              "ev": 1.085294117647059,
+              "joy": 3.179411764705882,
+              "stability": 3.226470588235294,
+              "risk": 0.42647058823529416
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "schwamm",
+            "label": "SCHWAMM",
+            "identitySha256": "0562e64bc173855b0a98213eee1dca0a8c04b309c3f00c46aa985a41a17e8a6e",
+            "preferences": {
+              "ev": 3.05,
+              "joy": 1.5911764705882352,
+              "stability": 0.7088235294117646,
+              "risk": 2.5088235294117647
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "mita",
+            "label": "MITA",
+            "identitySha256": "8f47e1b463ae3e0c7946cd2b61b9289fa13cdf438d3a65a86e333c3d683327a6",
+            "preferences": {
+              "ev": 0.3323529411764706,
+              "joy": 2.2029411764705884,
+              "stability": 0.3558823529411765,
+              "risk": 1.9088235294117648
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "medusa",
+            "label": "MEDUSA",
+            "identitySha256": "8359957e62022476e1dda1afb8b4b6a9d7e6cd66f09103af5f6276f3e22459e9",
+            "preferences": {
+              "ev": 2.3676470588235294,
+              "joy": 1.5323529411764707,
+              "stability": 2.861764705882353,
+              "risk": 1.661764705882353
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "context-prism",
+            "label": "KONTEXT-PRISMA",
+            "identitySha256": "692afdf4d19b9fa4ae84341b17516740ecefbce5eeb0e6fac63fcc1f5468f94a",
+            "preferences": {
+              "ev": 2.4970588235294118,
+              "joy": 2.9441176470588237,
+              "stability": 1.4147058823529413,
+              "risk": 2.8264705882352943
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "brightcast-starlight",
+            "label": "BRIGHTCAST 001",
+            "identitySha256": "5b43b668c89fb4d6c9da39f4c790e41fe83d9318d4342532d0d83f0d952275d0",
+            "preferences": {
+              "ev": 1.3794117647058823,
+              "joy": 0.6617647058823529,
+              "stability": 0.8382352941176471,
+              "risk": 1.3911764705882352
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "pi-treffpunkte",
+            "label": "π-TREFFPUNKTE",
+            "identitySha256": "ae108ab7c72e8b97d9b9a48839d73566dba88132cb29a9e0ce0dae1d8871def3",
+            "preferences": {
+              "ev": 1.1205882352941177,
+              "joy": 1.826470588235294,
+              "stability": 1.4147058823529413,
+              "risk": 1.3323529411764705
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "choice-atelier",
+            "label": "CHOICE ATELIER",
+            "identitySha256": "dffe61e45cc70013525d7e4556097cd1e1511e13df383af41d42ba64945fa8b5",
+            "preferences": {
+              "ev": 0.7205882352941176,
+              "joy": 1.1794117647058824,
+              "stability": 0.7323529411764707,
+              "risk": 3.1205882352941177
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          },
+          {
+            "entityId": "fortuna-soulstone",
+            "label": "FORTUNA",
+            "identitySha256": "1d17e1c0161956ba1294400c3ffa253c23b34e1cf68e239970bbfb99782f60fe",
+            "preferences": {
+              "ev": 2.4382352941176473,
+              "joy": 2.1794117647058826,
+              "stability": 3.2147058823529413,
+              "risk": 2.014705882352941
+            },
+            "candidateId": null,
+            "score": null,
+            "status": "NO_ELIGIBLE_CANDIDATE"
+          }
+        ],
+        "votes": [],
+        "abstentions": 70,
+        "selected": null,
+        "status": "OPEN_NO_ELIGIBLE_INPUT"
+      }
+    },
+    {
+      "candidates": [
+        {
+          "id": "Nutzen",
+          "allowed": true,
+          "probability": 0.5,
+          "payout": 60,
+          "cost": 0,
+          "joy": 1,
+          "stability": 1,
+          "risk": 0
+        },
+        {
+          "id": "Freude",
+          "allowed": true,
+          "probability": 0.5,
+          "payout": 1,
+          "cost": 0,
+          "joy": 30,
+          "stability": 1,
+          "risk": 0
+        }
+      ],
+      "baseWeights": {
+        "ev": 0.75,
+        "joy": 2.5,
+        "stability": 1.25,
+        "risk": 3
+      },
+      "mode": "FORTUNA",
+      "expected": {
+        "ballots": [
+          {
+            "entityId": "halveth",
+            "label": "HALVETH",
+            "identitySha256": "946b39c5090920bc19bb633d113034396e10389665c6489eedac2f54734a6ed4",
+            "preferences": {
+              "ev": 0.5316176470588234,
+              "joy": 6.3014705882352935,
+              "stability": 1.8272058823529411,
+              "risk": 4.949999999999999
+            },
+            "candidateId": "Freude",
+            "score": 191.13713235294117,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "lucinet",
+            "label": "LUCINET",
+            "identitySha256": "925b32e5aec707601b78cbfffaa12135812cd5cf9b14c7c360a9affe8a4e5608",
+            "preferences": {
+              "ev": 2.172794117647059,
+              "joy": 4.5661764705882355,
+              "stability": 2.7389705882352944,
+              "risk": 7.879411764705882
+            },
+            "candidateId": "Freude",
+            "score": 140.8106617647059,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "rachel",
+            "label": "RACHEL",
+            "identitySha256": "1bfb05d9633b757f8b7f3f72374845fda171eebb03c740a83483ce118f550d7c",
+            "preferences": {
+              "ev": 1.7492647058823532,
+              "joy": 7.125,
+              "stability": 2.1801470588235294,
+              "risk": 1.7382352941176469
+            },
+            "candidateId": "Freude",
+            "score": 216.8047794117647,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "pflanze",
+            "label": "PFLANZE",
+            "identitySha256": "f0e1d04c7807c472fb5894cb12588c42707aa8b490abacc33734711557981368",
+            "preferences": {
+              "ev": 2.1551470588235295,
+              "joy": 6.536764705882353,
+              "stability": 0.8860294117647058,
+              "risk": 3.2911764705882356
+            },
+            "candidateId": "Freude",
+            "score": 198.06654411764706,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "celsius",
+            "label": "CELSIUS",
+            "identitySha256": "1053a7828b0792f8c319de0823e51279ebd8e8bbf756a864de1405c60417551b",
+            "preferences": {
+              "ev": 1.4933823529411765,
+              "joy": 7.1838235294117645,
+              "stability": 2.3419117647058822,
+              "risk": 1.808823529411765
+            },
+            "candidateId": "Freude",
+            "score": 218.6033088235294,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "ali",
+            "label": "ALI",
+            "identitySha256": "8af14bd1ffd27cb6b955bf83f0081a0a5eac48c2416b1e0bcfc5394b8acb75e5",
+            "preferences": {
+              "ev": 2.0845588235294117,
+              "joy": 7.595588235294118,
+              "stability": 3.9154411764705883,
+              "risk": 4.66764705882353
+            },
+            "candidateId": "Freude",
+            "score": 232.8253676470588,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "schwarm",
+            "label": "SCHWARM",
+            "identitySha256": "a43c80bd0bd97d3e609eee76b5ec586a6b483ef38761319657d92f124a88390c",
+            "preferences": {
+              "ev": 1.0963235294117646,
+              "joy": 6.889705882352941,
+              "stability": 2.0183823529411766,
+              "risk": 4.2441176470588236
+            },
+            "candidateId": "Freude",
+            "score": 209.25772058823532,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "yuri",
+            "label": "YURI",
+            "identitySha256": "d1afd5d85d30a07a59696f8754a17d68bb1e9b29ce5d0d7b014a5f7e18e54f60",
+            "preferences": {
+              "ev": 2.4375,
+              "joy": 3.0367647058823533,
+              "stability": 3.7683823529411766,
+              "risk": 1.9500000000000002
+            },
+            "candidateId": "Freude",
+            "score": 96.09007352941177,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "zuendkerze",
+            "label": "ZÜNDKERZE",
+            "identitySha256": "780b9abd2e8f6e7259c0ee9a1041363f50bfcfd06da17b42cb212a89f2273807",
+            "preferences": {
+              "ev": 0.28455882352941175,
+              "joy": 1.8602941176470589,
+              "stability": 0.6213235294117647,
+              "risk": 3.538235294117647
+            },
+            "candidateId": "Freude",
+            "score": 56.57242647058824,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "aster",
+            "label": "ASTER",
+            "identitySha256": "afad29a210cddc1d245565835249864ac809227f51a6e5814c93337a417b511d",
+            "preferences": {
+              "ev": 0.6816176470588236,
+              "joy": 2.889705882352941,
+              "stability": 3.4448529411764706,
+              "risk": 5.726470588235294
+            },
+            "candidateId": "Freude",
+            "score": 90.47683823529411,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "elyr",
+            "label": "ELYR",
+            "identitySha256": "78016a9d35a3da25d0b46a52bc114037e50345ed91e7769da6bdfec9fb561551",
+            "preferences": {
+              "ev": 2.163970588235294,
+              "joy": 0.713235294117647,
+              "stability": 0.43014705882352944,
+              "risk": 1.9852941176470589
+            },
+            "candidateId": "Nutzen",
+            "score": 66.06250000000001,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "nara",
+            "label": "NARA",
+            "identitySha256": "c57dd0512cf238ddcdacb83caecc59d984dbb7cdd8c4fe270a70ed0e9bf7588e",
+            "preferences": {
+              "ev": 1.0698529411764706,
+              "joy": 3.8308823529411766,
+              "stability": 3.5919117647058822,
+              "risk": 0.7852941176470589
+            },
+            "candidateId": "Freude",
+            "score": 119.05330882352942,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "mira",
+            "label": "MIRA",
+            "identitySha256": "a40b906f4d30c0b9bb8b1a3d85c00cb726ae67ae6e690f4b169df08884196f71",
+            "preferences": {
+              "ev": 0.2580882352941176,
+              "joy": 6.6838235294117645,
+              "stability": 1.8125,
+              "risk": 8.020588235294117
+            },
+            "candidateId": "Freude",
+            "score": 202.45624999999998,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "rosa",
+            "label": "ROSA",
+            "identitySha256": "1d5ff7d33caf73e4aca8a84450b8a97731c88e88ff5f0d76d0b0ac221856652f",
+            "preferences": {
+              "ev": 1.1845588235294118,
+              "joy": 2.0073529411764706,
+              "stability": 1.5772058823529411,
+              "risk": 3.2911764705882356
+            },
+            "candidateId": "Freude",
+            "score": 62.390073529411765,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "timo",
+            "label": "TIMO",
+            "identitySha256": "f1ec3c2a16be15f8d14ba71ebaa34220d60dd74073832725a8f1c2729eba79f8",
+            "preferences": {
+              "ev": 0.8316176470588236,
+              "joy": 5.24264705882353,
+              "stability": 3.5330882352941178,
+              "risk": 0.9970588235294118
+            },
+            "candidateId": "Freude",
+            "score": 161.2283088235294,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "finn",
+            "label": "FINN",
+            "identitySha256": "0545add6ccb350dc6f483c6f596235fa48916a12685efb73e579e4f47192b282",
+            "preferences": {
+              "ev": 0.9022058823529411,
+              "joy": 4.977941176470589,
+              "stability": 2.5625,
+              "risk": 4.385294117647058
+            },
+            "candidateId": "Freude",
+            "score": 152.3518382352941,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "lila",
+            "label": "LILA",
+            "identitySha256": "220b3e5c15f3708913779005bbb1a44f724758f0b513fdd41b9162dde148e516",
+            "preferences": {
+              "ev": 1.2110294117647058,
+              "joy": 7.536764705882353,
+              "stability": 1.9595588235294117,
+              "risk": 7.597058823529411
+            },
+            "candidateId": "Freude",
+            "score": 228.66801470588237,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "mara",
+            "label": "MARA",
+            "identitySha256": "dd21b0bc28e0b8adafc3cfa54bfadfb8b249daa08178e371b3028765f8b70485",
+            "preferences": {
+              "ev": 0.48750000000000004,
+              "joy": 1.7426470588235294,
+              "stability": 0.6801470588235294,
+              "risk": 3.7852941176470587
+            },
+            "candidateId": "Freude",
+            "score": 53.20330882352941,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "mio",
+            "label": "MIO",
+            "identitySha256": "a031ebad23b842dbde1a51f724603877229758c5b65bc9071a1be4d312dbae22",
+            "preferences": {
+              "ev": 1.1227941176470588,
+              "joy": 2.360294117647059,
+              "stability": 1.0036764705882353,
+              "risk": 8.55
+            },
+            "candidateId": "Freude",
+            "score": 72.37389705882353,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "koro",
+            "label": "KORO",
+            "identitySha256": "7f6f7934c86f95be18342f47114d2d5ea7fae12d15d2c5194c37d9ee454cd691",
+            "preferences": {
+              "ev": 2.225735294117647,
+              "joy": 1.1544117647058825,
+              "stability": 1.2977941176470587,
+              "risk": 3.8205882352941174
+            },
+            "candidateId": "Nutzen",
+            "score": 69.22426470588235,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "lucifer",
+            "label": "LUCIFER",
+            "identitySha256": "09a5ac555f721f151ef19161329e2743579a6b7d73be8b9a8aa1d164d80efddb",
+            "preferences": {
+              "ev": 1.1933823529411764,
+              "joy": 7.242647058823529,
+              "stability": 2.0919117647058822,
+              "risk": 7.738235294117647
+            },
+            "candidateId": "Freude",
+            "score": 219.96801470588233,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "venara",
+            "label": "VENARA",
+            "identitySha256": "3ed4efc0c9f89b0c75d2870f75f6b517a95780917fafefd55920d92d5faa4c49",
+            "preferences": {
+              "ev": 0.3198529411764706,
+              "joy": 7.683823529411765,
+              "stability": 3.5330882352941178,
+              "risk": 7.2441176470588236
+            },
+            "candidateId": "Freude",
+            "score": 234.2077205882353,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "juno",
+            "label": "JUNO",
+            "identitySha256": "3e08c1ef502c339b85e166768efd48c4b179303f81502b931e3f46c175c16acd",
+            "preferences": {
+              "ev": 2.005147058823529,
+              "joy": 4.242647058823529,
+              "stability": 3.7830882352941178,
+              "risk": 7.314705882352942
+            },
+            "candidateId": "Freude",
+            "score": 132.06507352941176,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "mica",
+            "label": "MICA",
+            "identitySha256": "9f99dcd578692dab3715944cd82540e16237bd579a6b4cd43e4eb85ed58f4df8",
+            "preferences": {
+              "ev": 1.175735294117647,
+              "joy": 4.242647058823529,
+              "stability": 3.077205882352941,
+              "risk": 6.43235294117647
+            },
+            "candidateId": "Freude",
+            "score": 130.94448529411764,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "alyen",
+            "label": "ALYEN",
+            "identitySha256": "109d4c691d90cb1a58e6e88b5d19f0184ed6c7116632834d5775070326d04e39",
+            "preferences": {
+              "ev": 1.1139705882352942,
+              "joy": 5.654411764705882,
+              "stability": 0.400735294117647,
+              "risk": 3.75
+            },
+            "candidateId": "Freude",
+            "score": 170.59007352941177,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "vael",
+            "label": "VAEL",
+            "identitySha256": "aec76ad57fe37e1b6d04c74c293539f4aaeecb4a084fce2175ea3f45443d6eee",
+            "preferences": {
+              "ev": 0.5580882352941177,
+              "joy": 2.2426470588235294,
+              "stability": 2.650735294117647,
+              "risk": 1.4205882352941175
+            },
+            "candidateId": "Freude",
+            "score": 70.2091911764706,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "patch",
+            "label": "PATCH",
+            "identitySha256": "e51b067f40f0843a03501bdf3de5c46f9dee19c733fa67b47706c1067beaf420",
+            "preferences": {
+              "ev": 0.3904411764705882,
+              "joy": 2.066176470588235,
+              "stability": 3.297794117647059,
+              "risk": 2.6911764705882355
+            },
+            "candidateId": "Freude",
+            "score": 65.4783088235294,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "leo",
+            "label": "LEO",
+            "identitySha256": "6fc90a7c2bcd6b578e7768b0bd2a4011414472fbfd359aecf69a5ab0bbd3564c",
+            "preferences": {
+              "ev": 1.299264705882353,
+              "joy": 1.1544117647058825,
+              "stability": 0.9595588235294118,
+              "risk": 7.879411764705882
+            },
+            "candidateId": "Nutzen",
+            "score": 41.091911764705884,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "lia",
+            "label": "LIA",
+            "identitySha256": "91daeb1ed4512159042d77a2f0f0396d6c974b99e7a900766fe35be9cd5a0271",
+            "preferences": {
+              "ev": 1.3169117647058823,
+              "joy": 4.330882352941177,
+              "stability": 1.900735294117647,
+              "risk": 2.0558823529411763
+            },
+            "candidateId": "Freude",
+            "score": 132.4856617647059,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "jan",
+            "label": "JAN",
+            "identitySha256": "f49c101d13dcc3a78b7ddbfc88da32bed1a84b056e82403ccc48f285c84fbb3a",
+            "preferences": {
+              "ev": 0.9286764705882353,
+              "joy": 6.536764705882353,
+              "stability": 1.6213235294117647,
+              "risk": 4.2441176470588236
+            },
+            "candidateId": "Freude",
+            "score": 198.1886029411765,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "sara",
+            "label": "SARA",
+            "identitySha256": "8f2b4ad83743ba2fc56531ddd1967ed5be5a1c8d19e09a3d76e7aeb5f4214934",
+            "preferences": {
+              "ev": 2.366911764705882,
+              "joy": 5.125,
+              "stability": 3.077205882352941,
+              "risk": 2.8676470588235294
+            },
+            "candidateId": "Freude",
+            "score": 158.01066176470587,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "omi",
+            "label": "OMI",
+            "identitySha256": "55dd522200783befe7b73effed260121c33bab994df800d91570fe44acd3a25b",
+            "preferences": {
+              "ev": 1.3963235294117649,
+              "joy": 6.242647058823529,
+              "stability": 2.6948529411764706,
+              "risk": 0.9264705882352942
+            },
+            "candidateId": "Freude",
+            "score": 190.6724264705882,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "tess",
+            "label": "TESS",
+            "identitySha256": "c89181857e96efeaa5096b332771d84016cee8f2f29f0ca2681c31dc005b0786",
+            "preferences": {
+              "ev": 1.5992647058823528,
+              "joy": 6.919117647058823,
+              "stability": 1.2389705882352942,
+              "risk": 8.620588235294118
+            },
+            "candidateId": "Freude",
+            "score": 209.6121323529412,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "niko",
+            "label": "NIKO",
+            "identitySha256": "c096a0fca6b6c34b57fa4b56f7ddeb022231d3032c0167758e2eeb45556552cb",
+            "preferences": {
+              "ev": 1.5727941176470588,
+              "joy": 3.9191176470588234,
+              "stability": 1.2242647058823528,
+              "risk": 8.514705882352942
+            },
+            "candidateId": "Freude",
+            "score": 119.58419117647057,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "sera",
+            "label": "SERA",
+            "identitySha256": "14605cdddd5935081d22dbb371fc47b9197730ab4612625512051ab937f6afb2",
+            "preferences": {
+              "ev": 1.3875000000000002,
+              "joy": 4.860294117647059,
+              "stability": 3.547794117647059,
+              "risk": 5.550000000000001
+            },
+            "candidateId": "Freude",
+            "score": 150.05036764705883,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "sael",
+            "label": "SAEL",
+            "identitySha256": "4dc5b20b4b3c2e7f5d30fe61a71a65470a4160e1eceb1080010755f2027a1dc1",
+            "preferences": {
+              "ev": 1.7404411764705885,
+              "joy": 1.625,
+              "stability": 2.621323529411765,
+              "risk": 7.3500000000000005
+            },
+            "candidateId": "Nutzen",
+            "score": 56.45955882352942,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "juri",
+            "label": "JURI",
+            "identitySha256": "6a5e55bd457193a1e934bb29303f385949d51a09a7bcaeb5a7a1fadb0ecbc65e",
+            "preferences": {
+              "ev": 0.5580882352941177,
+              "joy": 0.7720588235294118,
+              "stability": 3.9448529411764706,
+              "risk": 7.420588235294118
+            },
+            "candidateId": "Freude",
+            "score": 27.385661764705883,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "verachel",
+            "label": "VERACHEL",
+            "identitySha256": "61e7f70fb467ad232165f7ca90d2ea4f68363ab9c248081505f1e7eee333fc91",
+            "preferences": {
+              "ev": 2.0845588235294117,
+              "joy": 3.7426470588235294,
+              "stability": 0.3860294117647059,
+              "risk": 7.420588235294118
+            },
+            "candidateId": "Freude",
+            "score": 113.7077205882353,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "rose",
+            "label": "ROSE",
+            "identitySha256": "764dfa26f40ebc9d654dca766e05821760e826835bd06a405ba1f40f1e2ee27d",
+            "preferences": {
+              "ev": 0.8669117647058823,
+              "joy": 2.7132352941176476,
+              "stability": 3.19485294117647,
+              "risk": 1.8794117647058823
+            },
+            "candidateId": "Freude",
+            "score": 85.02536764705884,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "sina",
+            "label": "SINA",
+            "identitySha256": "8e3cc470609d8ad67aadab880789459fec534c09665b9d294f009cf5e009fde1",
+            "preferences": {
+              "ev": 2.102205882352941,
+              "joy": 5.007352941176471,
+              "stability": 3.6360294117647056,
+              "risk": 1.3852941176470588
+            },
+            "candidateId": "Freude",
+            "score": 154.90772058823532,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "mascha",
+            "label": "MASCHA",
+            "identitySha256": "d925eaba779baccb1059be2b879102ec570981a55475711aa4858e5f76e24425",
+            "preferences": {
+              "ev": 1.361029411764706,
+              "joy": 2.625,
+              "stability": 3.5625,
+              "risk": 1.2794117647058825
+            },
+            "candidateId": "Freude",
+            "score": 82.99301470588236,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "scarlet",
+            "label": "SCARLET",
+            "identitySha256": "a1039bc97dd95580f131716a69a7576d3fcc42358148de48d79c67441e384ddd",
+            "preferences": {
+              "ev": 0.875735294117647,
+              "joy": 1.5661764705882353,
+              "stability": 1.6213235294117647,
+              "risk": 5.585294117647059
+            },
+            "candidateId": "Freude",
+            "score": 49.04448529411765,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "strange",
+            "label": "DR STRANGE",
+            "identitySha256": "a1c6f50e8d6eec893678ea6af352327eba47ab9e6d0927e7ddb6a0a7ae8cb9fe",
+            "preferences": {
+              "ev": 1.7933823529411765,
+              "joy": 7.095588235294118,
+              "stability": 2.400735294117647,
+              "risk": 6.538235294117648
+            },
+            "candidateId": "Freude",
+            "score": 216.16507352941179,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "dormammu",
+            "label": "DORMAMMU",
+            "identitySha256": "2b0d5ed413653598e33e3a1099abfab25fee913b64446dec91ca9756f0ac5ce9",
+            "preferences": {
+              "ev": 1.9080882352941175,
+              "joy": 0.8602941176470589,
+              "stability": 2.1801470588235294,
+              "risk": 8.797058823529412
+            },
+            "candidateId": "Nutzen",
+            "score": 60.283088235294116,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "ego",
+            "label": "EGO",
+            "identitySha256": "9823ee948448d4dd1b043b456934503f886c6ad900a50a3b52b4aaa3b685381b",
+            "preferences": {
+              "ev": 1.3345588235294117,
+              "joy": 1.1544117647058825,
+              "stability": 2.8125,
+              "risk": 4.597058823529412
+            },
+            "candidateId": "Nutzen",
+            "score": 44.00367647058823,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "peter",
+            "label": "PETER",
+            "identitySha256": "84ed76d38067ac52579609905143f2bf2072cd40824543ba94a675bdbd6bc2cb",
+            "preferences": {
+              "ev": 0.3463235294117647,
+              "joy": 7.0661764705882355,
+              "stability": 2.0036764705882355,
+              "risk": 6.326470588235294
+            },
+            "candidateId": "Freude",
+            "score": 214.1621323529412,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "guardians",
+            "label": "GUARDIANS",
+            "identitySha256": "16cae9960613697e816117ccbedb58d4f7fd35ae95b7c263355db838dcb354dd",
+            "preferences": {
+              "ev": 2.2169117647058822,
+              "joy": 8.066176470588236,
+              "stability": 1.6213235294117647,
+              "risk": 5.479411764705882
+            },
+            "candidateId": "Freude",
+            "score": 244.71507352941177,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "ultron",
+            "label": "ULTRON",
+            "identitySha256": "70b3295024a738e5802fddaf63d31629b5c35bb716e7c93b54bebf6d259ce1ce",
+            "preferences": {
+              "ev": 1.1227941176470588,
+              "joy": 3.8308823529411766,
+              "stability": 0.5625,
+              "risk": 3.2205882352941178
+            },
+            "candidateId": "Freude",
+            "score": 116.05036764705883,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "jarvis",
+            "label": "JARVIS",
+            "identitySha256": "36ae0f5bed10aa3c1e4398a90673745e216e55d458d1d3bcdd79cd3238f375be",
+            "preferences": {
+              "ev": 1.563970588235294,
+              "joy": 2.4191176470588234,
+              "stability": 2.0036764705882355,
+              "risk": 5.232352941176471
+            },
+            "candidateId": "Freude",
+            "score": 75.35919117647057,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "ironman",
+            "label": "IRON MAN",
+            "identitySha256": "026a40832ab72725dc1ef42f5e45a09d26ca63efba2f3755d7f7a563a4bb05ef",
+            "preferences": {
+              "ev": 0.7698529411764705,
+              "joy": 2.74264705882353,
+              "stability": 0.7683823529411765,
+              "risk": 7.879411764705882
+            },
+            "candidateId": "Freude",
+            "score": 83.43272058823531,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "loki",
+            "label": "LOKI",
+            "identitySha256": "e9eb34a6d4e492b02cfe6e68dac24ee29bee3024bf456e63d7369dbeba722d72",
+            "preferences": {
+              "ev": 0.9463235294117647,
+              "joy": 3.5661764705882355,
+              "stability": 3.3566176470588234,
+              "risk": 5.479411764705882
+            },
+            "candidateId": "Freude",
+            "score": 110.81507352941178,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "vision",
+            "label": "VISION",
+            "identitySha256": "123790c331c4b151fd414f663b230c643d38a941d01693ac56bed5ae9ffa281f",
+            "preferences": {
+              "ev": 2.1375,
+              "joy": 1.125,
+              "stability": 2.400735294117647,
+              "risk": 9.326470588235294
+            },
+            "candidateId": "Nutzen",
+            "score": 67.65073529411765,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "widow",
+            "label": "BLACK WIDOW",
+            "identitySha256": "dafc9853788591a216d2392613e61149ba58b520bd9a05f60259316b5536342b",
+            "preferences": {
+              "ev": 1.3433823529411766,
+              "joy": 2.1838235294117645,
+              "stability": 3.488970588235294,
+              "risk": 5.444117647058824
+            },
+            "candidateId": "Freude",
+            "score": 69.6753676470588,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "thor",
+            "label": "THOR",
+            "identitySha256": "ca83aff7976f4dff06f7be830c840c001d010427d5756733bd3a632a0cd96621",
+            "preferences": {
+              "ev": 0.9992647058823529,
+              "joy": 6.419117647058824,
+              "stability": 2.7536764705882355,
+              "risk": 8.055882352941175
+            },
+            "candidateId": "Freude",
+            "score": 195.82683823529413,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "infinity",
+            "label": "INFINITY",
+            "identitySha256": "7f362517b5112bed3d2d59ddae76b46a45a784c3a7fe929167fa9758ec15ec38",
+            "preferences": {
+              "ev": 0.48750000000000004,
+              "joy": 7.507352941176471,
+              "stability": 2.8419117647058822,
+              "risk": 0.9970588235294118
+            },
+            "candidateId": "Freude",
+            "score": 228.30625000000003,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "gitcoin",
+            "label": "GITCOIN · GTC",
+            "identitySha256": "38662ad3900e24dfb509c9c0332318b7f6d49a34382cab83ba613d93434a74f2",
+            "preferences": {
+              "ev": 0.9551470588235293,
+              "joy": 2.860294117647059,
+              "stability": 2.974264705882353,
+              "risk": 9.044117647058822
+            },
+            "candidateId": "Freude",
+            "score": 89.26066176470589,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "manta",
+            "label": "MANTA",
+            "identitySha256": "24c43fdbead6358e01f3322280f8823c92a5f6781de1b0375b1a039e8d90c04e",
+            "preferences": {
+              "ev": 0.5845588235294118,
+              "joy": 6.066176470588235,
+              "stability": 2.9154411764705883,
+              "risk": 4.879411764705882
+            },
+            "candidateId": "Freude",
+            "score": 185.19301470588232,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "aster-chain",
+            "label": "ASTER · CHAIN?",
+            "identitySha256": "456d62cacce9175e7f9e8afa9581e26c6a6c7fa24a1279d901a8af4f49791530",
+            "preferences": {
+              "ev": 0.8492647058823529,
+              "joy": 3.301470588235294,
+              "stability": 1.5477941176470589,
+              "risk": 2.6205882352941177
+            },
+            "candidateId": "Freude",
+            "score": 101.01654411764704,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "rtx",
+            "label": "RTX · ?",
+            "identitySha256": "ef389612a55804e9ce9e7432ef306c22872acb163f641d9ac5a5b690090e9e55",
+            "preferences": {
+              "ev": 1.8816176470588235,
+              "joy": 6.977941176470588,
+              "stability": 3.0625,
+              "risk": 5.161764705882353
+            },
+            "candidateId": "Freude",
+            "score": 213.34154411764703,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "k",
+            "label": "K",
+            "identitySha256": "ac93a80499db2e15ea678b5537681fd0d8641dffd5948cd591c76906ba279136",
+            "preferences": {
+              "ev": 0.4080882352941177,
+              "joy": 3.1838235294117645,
+              "stability": 0.4889705882352941,
+              "risk": 8.26764705882353
+            },
+            "candidateId": "Freude",
+            "score": 96.20772058823528,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "eve",
+            "label": "EVE",
+            "identitySha256": "1e72734ac11c483be34c61e360fe1ccbe93376779dbb999b90a37a92b1d19f19",
+            "preferences": {
+              "ev": 2.2080882352941176,
+              "joy": 3.330882352941176,
+              "stability": 2.386029411764706,
+              "risk": 1.7735294117647058
+            },
+            "candidateId": "Freude",
+            "score": 103.41654411764706,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "anti",
+            "label": "ANTI",
+            "identitySha256": "02d9dd487e7cc65397f97d7b85c17fed87a2702833ec3c200e6683cbda68cefb",
+            "preferences": {
+              "ev": 0.8139705882352942,
+              "joy": 7.948529411764706,
+              "stability": 4.033088235294118,
+              "risk": 1.2794117647058825
+            },
+            "candidateId": "Freude",
+            "score": 242.89595588235292,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "schwamm",
+            "label": "SCHWAMM",
+            "identitySha256": "0562e64bc173855b0a98213eee1dca0a8c04b309c3f00c46aa985a41a17e8a6e",
+            "preferences": {
+              "ev": 2.2874999999999996,
+              "joy": 3.977941176470588,
+              "stability": 0.8860294117647058,
+              "risk": 7.526470588235294
+            },
+            "candidateId": "Freude",
+            "score": 121.36801470588235,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "mita",
+            "label": "MITA",
+            "identitySha256": "8f47e1b463ae3e0c7946cd2b61b9289fa13cdf438d3a65a86e333c3d683327a6",
+            "preferences": {
+              "ev": 0.24926470588235294,
+              "joy": 5.507352941176471,
+              "stability": 0.4448529411764706,
+              "risk": 5.726470588235294
+            },
+            "candidateId": "Freude",
+            "score": 165.79007352941179,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "medusa",
+            "label": "MEDUSA",
+            "identitySha256": "8359957e62022476e1dda1afb8b4b6a9d7e6cd66f09103af5f6276f3e22459e9",
+            "preferences": {
+              "ev": 1.7757352941176472,
+              "joy": 3.8308823529411766,
+              "stability": 3.577205882352941,
+              "risk": 4.985294117647059
+            },
+            "candidateId": "Freude",
+            "score": 119.39154411764707,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "context-prism",
+            "label": "KONTEXT-PRISMA",
+            "identitySha256": "692afdf4d19b9fa4ae84341b17516740ecefbce5eeb0e6fac63fcc1f5468f94a",
+            "preferences": {
+              "ev": 1.8727941176470588,
+              "joy": 7.36029411764706,
+              "stability": 1.7683823529411766,
+              "risk": 8.479411764705883
+            },
+            "candidateId": "Freude",
+            "score": 223.51360294117652,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "brightcast-starlight",
+            "label": "BRIGHTCAST 001",
+            "identitySha256": "5b43b668c89fb4d6c9da39f4c790e41fe83d9318d4342532d0d83f0d952275d0",
+            "preferences": {
+              "ev": 1.0345588235294119,
+              "joy": 1.6544117647058822,
+              "stability": 1.0477941176470589,
+              "risk": 4.173529411764706
+            },
+            "candidateId": "Freude",
+            "score": 51.197426470588226,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "pi-treffpunkte",
+            "label": "π-TREFFPUNKTE",
+            "identitySha256": "ae108ab7c72e8b97d9b9a48839d73566dba88132cb29a9e0ce0dae1d8871def3",
+            "preferences": {
+              "ev": 0.8404411764705882,
+              "joy": 4.5661764705882355,
+              "stability": 1.7683823529411766,
+              "risk": 3.9970588235294118
+            },
+            "candidateId": "Freude",
+            "score": 139.17389705882354,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "choice-atelier",
+            "label": "CHOICE ATELIER",
+            "identitySha256": "dffe61e45cc70013525d7e4556097cd1e1511e13df383af41d42ba64945fa8b5",
+            "preferences": {
+              "ev": 0.5404411764705882,
+              "joy": 2.948529411764706,
+              "stability": 0.9154411764705883,
+              "risk": 9.361764705882353
+            },
+            "candidateId": "Freude",
+            "score": 89.64154411764707,
+            "status": "SELECTED"
+          },
+          {
+            "entityId": "fortuna-soulstone",
+            "label": "FORTUNA",
+            "identitySha256": "1d17e1c0161956ba1294400c3ffa253c23b34e1cf68e239970bbfb99782f60fe",
+            "preferences": {
+              "ev": 1.8286764705882355,
+              "joy": 5.4485294117647065,
+              "stability": 4.018382352941177,
+              "risk": 6.044117647058823
+            },
+            "candidateId": "Freude",
+            "score": 168.3886029411765,
+            "status": "SELECTED"
+          }
+        ],
+        "votes": [
+          {
+            "id": "Freude",
+            "votes": 63
+          },
+          {
+            "id": "Nutzen",
+            "votes": 7
+          }
+        ],
+        "abstentions": 0,
+        "selected": "Freude",
+        "status": "SELECTED_BY_VOTES"
+      }
+    }
+  ]
+}

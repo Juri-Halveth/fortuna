@@ -21,3 +21,12 @@ Oeffentliche Lesbarkeit ist keine pauschale Open-Source-Lizenz.
 
 Keine neue Freigabe des Desktop-Programms oder seines Quellarchivs wird mit
 dieser Browser-Veroeffentlichung behauptet.
+
+Kollektiv /70 ergänzt eine eigene Browser-Auswahl: 69 vorhandene
+Software-Figurenadressen und ein Fortuna-Profil. Die Figurenquelle ist exakt
+an den öffentlichen Fortuna-Commit 61f9975accb06403ec483cd1ec5e762e946930ca
+gebunden; der Byte-Digest steht in collective-members.json. Die neuen
+Profilgewichte sind abgeleitete Softwareparameter. Namen werden nicht als
+Autorisierung, menschliche Identität oder unabhängiger Konsens verwendet.
+Die neuen Dateien ändern die bestehenden Lizenzhinweise und die offene
+Projektlizenzwahl nicht.
