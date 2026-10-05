@@ -21,12 +21,12 @@
       "ru": "/70 голосов"
     },
     "69 Figuren": {
-      "en": "69 Figures",
-      "ru": "69 Цифры"
+      "en": "69 characters",
+      "ru": "69 персонажей"
     },
     "69 Figurenadressen und Fortuna vergleichen deine Möglichkeiten. Jedes Profil zeigt seine eigene Auswahl und seine sichtbaren Gewichte.": {
-      "en": "69 character addresses and Fortuna compare your options. Each profile shows its own choices and its visible weights.",
-      "ru": "69 адресов символов и Fortuna сравнивают ваши варианты. Каждый профиль показывает свой собственный выбор и его видимые веса."
+      "en": "69 character addresses and Fortuna compare your options. Each profile shows its own selection and visible weights.",
+      "ru": "69 адресов персонажей и Fortuna сравнивают твои варианты. Каждый профиль показывает собственный выбор и видимые веса."
     },
     "69 distinct figures notice, approach and discover without mutating inputs": {
       "en": "69 distinct figures notice, approach and discover without mutating inputs",
@@ -233,16 +233,16 @@
       "ru": "ВОПРОС ОТ ЖЮРИ"
     },
     "Figuren": {
-      "en": "Characters",
-      "ru": "Персонажи"
+      "en": "characters",
+      "ru": "персонажей"
     },
     "Figurenquelle passt nicht zum gebundenen Kollektiv.": {
       "en": "Figure source does not fit the bound collective.",
       "ru": "Источник фигуры не соответствует связанному коллективу."
     },
     "Figurenraum mit unbekanntem Objekt": {
-      "en": "Figure space with unknown object",
-      "ru": "Фигурное пространство с неизвестным объектом"
+      "en": "Character space with an unknown object",
+      "ru": "Пространство персонажей с неизвестным объектом"
     },
     "Four authored synthetic input sets; shared model, not independent consensus": {
       "en": "Four authored synthetic input sets; shared model, not independent consensus",
@@ -779,6 +779,18 @@
     "π-TREFFPUNKTE": {
       "en": "π-TREFFPUNKTE",
       "ru": "π-TREFFPUNKTE"
+    },
+    "aktiv": {
+      "en": "active",
+      "ru": "активных"
+    },
+    "untersucht": {
+      "en": "investigated",
+      "ru": "исследовали"
+    },
+    "unterwegs": {
+      "en": "on the move",
+      "ru": "в движении"
     }
   }
 }
