@@ -1,3 +1,7 @@
+<!-- HUB_LANGUAGES_V1 -->
+[Original / Deutsch](README.md) · [English](README.en.md) · [Русский](README.ru.md)
+<!-- /HUB_LANGUAGES_V1 -->
+
 # FORTUNA
 
 Ein Windows-Programm zum Ordnen von Fenstern und zum Vergleichen eigener
