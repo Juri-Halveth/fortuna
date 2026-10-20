@@ -1,6 +1,6 @@
 [Original / Deutsch](README.md) · [English](README.en.md) · [Русский](README.ru.md)
 
-# FORTUNA
+# Fortuna – организация окон и сравнение вариантов
 
 **Краткий путеводитель по проекту · EN / RU**
 

@@ -2,7 +2,12 @@
 [Original / Deutsch](README.md) · [English](README.en.md) · [Русский](README.ru.md)
 <!-- /HUB_LANGUAGES_V1 -->
 
-# FORTUNA
+# Fortuna – Fenster ordnen und Möglichkeiten vergleichen
+
+Ein lokales Windows-Werkzeug zum Ordnen von Fenstern und zum Vergleichen selbst eingegebener Möglichkeiten. Die Bewertung folgt deinen Eingaben und ist kein Gewinnversprechen.
+
+[**Projekt öffnen →**](https://github.com/Juri-Halveth/fortuna#einfach-starten) · [Arbeitsproben](https://juri-halveth.github.io/koennen/) · [Portfolio](https://juri-halveth.github.io/)
+
 
 Ein Windows-Programm zum Ordnen von Fenstern und zum Vergleichen eigener
 Entscheidungsmoeglichkeiten.
