@@ -1,6 +1,6 @@
 [Original / Deutsch](README.md) · [English](README.en.md) · [Русский](README.ru.md)
 
-# FORTUNA
+# Fortuna – organise windows and compare your options
 
 **Concise project guide · EN / RU**
 
