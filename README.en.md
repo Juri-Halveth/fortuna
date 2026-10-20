@@ -1,24 +1,26 @@
-[Original / Deutsch](README.md) · [English](README.en.md) · [Русский](README.ru.md)
+[Deutsch](README.md) · [English](README.en.md) · [Русский](README.ru.md)
 
-# Fortuna – organise windows and compare your options
+# Fortuna · Compare options in your browser
 
-**Concise project guide · EN / RU**
+**An explorable browser interface and local JavaScript models.** Enter options,
+inspect weights and follow the resulting ranking. Characters in the browser
+world use local rules.
 
-FORTUNA compares options entered by the user using probability, return, cost, joy, stability and risk. The documented local Windows application also helps arrange windows and restore their previous positions. The public repository contains the browser behaviour simulation; the source README distinguishes it from the local desktop application.
+[Open the application](https://juri-halveth.github.io/fortuna/) · [Portfolio](https://juri-halveth.github.io/en/)
 
-The browser collective exposes the weights and individual results of 69 figure profiles plus Fortuna. These are calculations over supplied inputs. A measured improvement in luck, external game outcomes or casino winning probabilities has not been demonstrated; FORTUNA does not promise winnings.
+The published code includes `docs/collective.mjs` for option comparison,
+`docs/curiosity.mjs` for local character behaviour, the interface and model tests.
 
-This manually edited guide summarizes the audited source. The original technical documentation remains the reference for commands, build requirements, exact versions and detailed evidence.
+```sh
+python -m http.server 8849 --bind 127.0.0.1 --directory docs
+node --test docs/*.test.mjs
+```
 
-## Start with the sources
+Open `http://127.0.0.1:8849/`. This repository publishes the browser version.
+The previously described local Windows tool has neither native source nor an
+EXE download here. Rankings reflect supplied inputs, not measured improvements
+in external winning probabilities. Outputs share the same local rule engine.
 
-- [Original technical documentation](README.md)
-- [README at the audited commit](https://github.com/Juri-Halveth/fortuna/blob/5d9c9cac937c055fb9cd2baa9bc6d36c2183ebbc/README.md)
-- [Open FORTUNA](https://juri-halveth.github.io/fortuna/)
-- [Release page](https://github.com/Juri-Halveth/fortuna/releases)
-
-## Rights and scope
-
-The source README records that a final project licence has not yet been selected. Public access alone does not grant an open-source licence; component notices remain applicable.
-
-Use the original rights and licence notices for the relevant files and versions. This guide grants no additional licence.
+Project lead: Juri Halveth / HALVETH. AI-assisted development.
+An overall project licence has not been granted; [component notices](docs/NOTICE.md)
+retain their own terms. Contact: security@halveth.de.
