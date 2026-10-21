@@ -18,8 +18,8 @@ nachvollziehen. Die Figuren im Browserraum folgen lokalen Regeln.
 ## Lokal starten
 
 ```sh
-python -m http.server 8849 --bind 127.0.0.1 --directory docs
 node --test docs/*.test.mjs
+python -m http.server 8849 --bind 127.0.0.1 --directory docs
 ```
 
 Danach `http://127.0.0.1:8849/` öffnen.

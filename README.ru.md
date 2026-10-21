@@ -12,8 +12,8 @@
 `docs/curiosity.mjs` для поведения персонажей, интерфейс и тесты моделей.
 
 ```sh
-python -m http.server 8849 --bind 127.0.0.1 --directory docs
 node --test docs/*.test.mjs
+python -m http.server 8849 --bind 127.0.0.1 --directory docs
 ```
 
 Откройте `http://127.0.0.1:8849/`. Здесь опубликована браузерная версия.
