@@ -2,6 +2,8 @@
 
 # Fortuna · Möglichkeiten im Browser vergleichen
 
+**Person: Juri. Projekt: HALVETH.** [Namenszuordnung](IDENTITY.md).
+
 **Eine erkundbare Browseroberfläche und lokale JavaScript-Modelle.**
 Eigene Optionen eingeben, Gewichtungen ansehen und die resultierende Rangfolge
 nachvollziehen. Die Figuren im Browserraum folgen lokalen Regeln.
@@ -39,5 +41,5 @@ Die kopierten Figuren und Daten stammen aus der Scarlet-Quellfassung
 Eine abschließende eigene Projektlizenz ist noch nicht erteilt; Fremdkomponenten
 behalten ihre Bedingungen. Öffentliche Sichtbarkeit allein ist keine freie Lizenz.
 
-Projektleitung: **Juri Halveth / HALVETH**. Entwicklung mit KI-Unterstützung.
+Projektleitung: **Juri / HALVETH**. Entwicklung mit KI-Unterstützung.
 Kontakt: **security@halveth.de**.
