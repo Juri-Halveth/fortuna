@@ -21,6 +21,6 @@ The previously described local Windows tool has neither native source nor an
 EXE download here. Rankings reflect supplied inputs, not measured improvements
 in external winning probabilities. Outputs share the same local rule engine.
 
-Project lead: Juri Halveth / HALVETH. AI-assisted development.
+Project lead: Juri / HALVETH. AI-assisted development.
 An overall project licence has not been granted; [component notices](docs/NOTICE.md)
 retain their own terms. Contact: security@halveth.de.
