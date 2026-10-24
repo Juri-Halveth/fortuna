@@ -20,11 +20,13 @@ nachvollziehen. Die Figuren im Browserraum folgen lokalen Regeln.
 ## Lokal starten
 
 ```sh
-python -m http.server 8849 --bind 127.0.0.1 --directory docs
+python -c "import http.server, os; os.chdir('docs'); http.server.SimpleHTTPRequestHandler.extensions_map['.mjs']='text/javascript'; http.server.test(HandlerClass=http.server.SimpleHTTPRequestHandler,port=8849,bind='127.0.0.1')"
 node --test docs/*.test.mjs
 ```
 
 Danach `http://127.0.0.1:8849/` öffnen.
+Die Modul-Zuordnung ist ausdrücklich gesetzt, damit die Vorschau auch mit einer
+abweichenden Windows-MIME-Registrierung JavaScript-Module ausführt.
 
 ## Reifegrad und Herkunft
 
