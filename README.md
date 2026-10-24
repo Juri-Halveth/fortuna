@@ -20,8 +20,8 @@ nachvollziehen. Die Figuren im Browserraum folgen lokalen Regeln.
 ## Lokal starten
 
 ```sh
-python -c "import http.server, os; os.chdir('docs'); http.server.SimpleHTTPRequestHandler.extensions_map['.mjs']='text/javascript'; http.server.test(HandlerClass=http.server.SimpleHTTPRequestHandler,port=8849,bind='127.0.0.1')"
 node --test docs/*.test.mjs
+python -c "import http.server, os; os.chdir('docs'); http.server.SimpleHTTPRequestHandler.extensions_map['.mjs']='text/javascript'; http.server.test(HandlerClass=http.server.SimpleHTTPRequestHandler,port=8849,bind='127.0.0.1')"
 ```
 
 Danach `http://127.0.0.1:8849/` öffnen.

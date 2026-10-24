@@ -12,8 +12,8 @@ The published code includes `docs/collective.mjs` for option comparison,
 `docs/curiosity.mjs` for local character behaviour, the interface and model tests.
 
 ```sh
-python -m http.server 8849 --bind 127.0.0.1 --directory docs
 node --test docs/*.test.mjs
+python -c "import http.server, os; os.chdir('docs'); http.server.SimpleHTTPRequestHandler.extensions_map['.mjs']='text/javascript'; http.server.test(HandlerClass=http.server.SimpleHTTPRequestHandler,port=8849,bind='127.0.0.1')"
 ```
 
 Open `http://127.0.0.1:8849/`. This repository publishes the browser version.

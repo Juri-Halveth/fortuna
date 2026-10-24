@@ -12,8 +12,8 @@
 `docs/curiosity.mjs` для поведения персонажей, интерфейс и тесты моделей.
 
 ```sh
-python -m http.server 8849 --bind 127.0.0.1 --directory docs
 node --test docs/*.test.mjs
+python -c "import http.server, os; os.chdir('docs'); http.server.SimpleHTTPRequestHandler.extensions_map['.mjs']='text/javascript'; http.server.test(HandlerClass=http.server.SimpleHTTPRequestHandler,port=8849,bind='127.0.0.1')"
 ```
 
 Откройте `http://127.0.0.1:8849/`. Здесь опубликована браузерная версия.
