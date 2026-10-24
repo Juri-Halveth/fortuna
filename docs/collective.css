@@ -14,3 +14,6 @@
 #collective .profile-choice{border:0;padding:5px 0;display:block;text-align:left;color:#d1f6e5;white-space:nowrap}#collective .profile-choice:focus-visible{outline:2px solid #b8ffe2;outline-offset:3px}
 #collective-detail{white-space:pre-wrap;overflow-wrap:anywhere;background:#10211b;padding:12px;border-radius:8px;font-size:13px}
 @media(max-width:600px){#collective{padding:16px}.collective-heading h2{font-size:25px}.collective-ballots{max-height:260px}#collective button{font-size:14px}.collective-actions{gap:8px}}
+
+.world-unavailable{position:absolute;top:30%;left:50%;transform:translateX(-50%);width:min(32rem,calc(100% - 36px));padding:24px;background:#20352f;border:1px solid #6f9790;border-radius:6px;line-height:1.6}
+button:disabled{opacity:.45;cursor:default}

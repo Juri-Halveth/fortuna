@@ -5,7 +5,7 @@ unveraendert aus Juri-Halveth/halveth-scarlet uebernommen:
 
 https://github.com/Juri-Halveth/halveth-scarlet/tree/15f5df46e20e34bc06bc7d7676c7fd094ebb39f4
 
-Copyright (c) 2026 Juri Janovski, publishing as Juri Halveth, soweit die
+Copyright (c) 2026 Juri Janovski, project HALVETH, soweit die
 jeweiligen Rechte bestehen. Die originale Zuordnung steht in
 `vendor/SCARLET-LICENSES.md`; der unveraenderte Lizenztext liegt in
 `vendor/LICENSE-HALVETH-PIRL-2.0.md`. Fremdfiguren, Namen und Drittmaterial

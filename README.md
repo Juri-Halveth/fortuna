@@ -2,6 +2,8 @@
 
 # Fortuna · Möglichkeiten im Browser vergleichen
 
+**Person: Juri. Projekt: HALVETH.** [Namenszuordnung](IDENTITY.md).
+
 **Eine erkundbare Browseroberfläche und lokale JavaScript-Modelle.**
 Eigene Optionen eingeben, Gewichtungen ansehen und die resultierende Rangfolge
 nachvollziehen. Die Figuren im Browserraum folgen lokalen Regeln.
@@ -19,10 +21,12 @@ nachvollziehen. Die Figuren im Browserraum folgen lokalen Regeln.
 
 ```sh
 node --test docs/*.test.mjs
-python -m http.server 8849 --bind 127.0.0.1 --directory docs
+python -c "import http.server, os; os.chdir('docs'); http.server.SimpleHTTPRequestHandler.extensions_map['.mjs']='text/javascript'; http.server.test(HandlerClass=http.server.SimpleHTTPRequestHandler,port=8849,bind='127.0.0.1')"
 ```
 
 Danach `http://127.0.0.1:8849/` öffnen.
+Die Modul-Zuordnung ist ausdrücklich gesetzt, damit die Vorschau auch mit einer
+abweichenden Windows-MIME-Registrierung JavaScript-Module ausführt.
 
 ## Reifegrad und Herkunft
 
@@ -39,5 +43,5 @@ Die kopierten Figuren und Daten stammen aus der Scarlet-Quellfassung
 Eine abschließende eigene Projektlizenz ist noch nicht erteilt; Fremdkomponenten
 behalten ihre Bedingungen. Öffentliche Sichtbarkeit allein ist keine freie Lizenz.
 
-Projektleitung: **Juri Halveth / HALVETH**. Entwicklung mit KI-Unterstützung.
+Projektleitung: **Juri / HALVETH**. Entwicklung mit KI-Unterstützung.
 Kontakt: **security@halveth.de**.

@@ -13,7 +13,7 @@ The published code includes `docs/collective.mjs` for option comparison,
 
 ```sh
 node --test docs/*.test.mjs
-python -m http.server 8849 --bind 127.0.0.1 --directory docs
+python -c "import http.server, os; os.chdir('docs'); http.server.SimpleHTTPRequestHandler.extensions_map['.mjs']='text/javascript'; http.server.test(HandlerClass=http.server.SimpleHTTPRequestHandler,port=8849,bind='127.0.0.1')"
 ```
 
 Open `http://127.0.0.1:8849/`. This repository publishes the browser version.
@@ -21,6 +21,6 @@ The previously described local Windows tool has neither native source nor an
 EXE download here. Rankings reflect supplied inputs, not measured improvements
 in external winning probabilities. Outputs share the same local rule engine.
 
-Project lead: Juri Halveth / HALVETH. AI-assisted development.
+Project lead: Juri / HALVETH. AI-assisted development.
 An overall project licence has not been granted; [component notices](docs/NOTICE.md)
 retain their own terms. Contact: security@halveth.de.

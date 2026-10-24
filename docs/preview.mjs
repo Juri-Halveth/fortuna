@@ -2,11 +2,23 @@ import * as runtime from './vendor/runtime.mjs';
 import { createEntityFigure } from './vendor/entity-figures.mjs';
 import { createFortunaStone } from './stone.mjs';
 import { createCuriosity } from './curiosity.mjs';
+import { createFrameLoop } from './frame-loop.mjs';
 const { THREE: T, OrbitControls } = runtime;
 runtime.createIcons({ icons: Object.fromEntries(Object.entries(runtime).filter(([k]) => !['THREE','OrbitControls','createIcons'].includes(k))) });
 const entities = window.HalvethUniverse.entities;
 document.querySelector('#count').textContent = `${entities.length} Figuren`;
-const renderer = new T.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+function startWorld() {
+let renderer;
+try { renderer = new T.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true }); }
+catch {
+  const message = document.createElement('p');
+  message.className = 'world-unavailable';
+  message.textContent = 'Die 3D-Ansicht ist in diesem Browser gerade nicht verfügbar. Möglichkeiten kannst du weiterhin über „Kollektiv /70“ vergleichen.';
+  document.querySelector('#world').append(message);
+  document.querySelector('#events').textContent = 'Der Vergleich bleibt verfügbar.';
+  for (const id of ['pause','ask','inspect']) document.querySelector('#'+id).disabled = true;
+  return;
+}
 renderer.setPixelRatio(Math.min(devicePixelRatio, 1.5));
 renderer.outputColorSpace = T.SRGBColorSpace; renderer.toneMapping = T.ACESFilmicToneMapping;
 document.querySelector('#world').append(renderer.domElement);
@@ -28,12 +40,13 @@ const entries = entities.map((entity, i) => {
   return { entity, figure, last: [...positions.get(entity.id)] };
 });
 const curiosity = createCuriosity(entities.map(e=>e.id));
-let time = 0, previous = performance.now(), paused = matchMedia('(prefers-reduced-motion: reduce)').matches;
+let time = 0, loop, paused = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const pause = document.querySelector('#pause');
 function label() { pause.querySelector('span').textContent = paused ? 'Weiter' : 'Pause'; pause.setAttribute('aria-pressed', String(paused)); }
-label(); pause.onclick = () => { paused = !paused; label(); };
+label(); pause.onclick = () => { paused = !paused; label(); loop.setPaused(paused); };
 document.querySelector('#ask').onclick = () => {
   curiosity.impulse(time);
+  loop.invalidate();
   document.querySelector('#details').hidden = true;
   document.querySelector('#question').hidden = false;
 };
@@ -48,13 +61,9 @@ fetch('object.json').then(r=>r.ok?r.json():Promise.reject()).then(m=>{
   if (m.sourceArchive.path === 'source/FORTUNA_SOURCE_09604b0.zip') { link.href = m.sourceArchive.path; link.hidden = false; }
   document.querySelector('#archive-status').textContent = m.sourceArchive.path ? 'Quellarchiv lokal vorhanden.' : 'Desktop-Quellarchiv noch nicht veroeffentlicht.';
 }).catch(()=>{ document.querySelector('#digest').textContent='Archivnachweis nicht geladen.'; });
-function resize(){const w=innerWidth,h=innerHeight;renderer.setSize(w,h);camera.aspect=w/h;camera.position.set(w<600?52:27,w<600?65:32,w<600?98:40);camera.updateProjectionMatrix();controls.update();}
-addEventListener('resize',resize);resize();
-document.addEventListener('visibilitychange',()=>{previous=performance.now();});
-function frame(now){
-  requestAnimationFrame(frame);
-  const dt=Math.max(0,Math.min(.05,(now-previous)/1000));previous=now;
-  if(document.hidden)return;
+function resize(){const w=innerWidth,h=innerHeight;renderer.setSize(w,h);camera.aspect=w/h;camera.position.set(w<600?52:27,w<600?65:32,w<600?98:40);camera.updateProjectionMatrix();controls.update();loop?.invalidate();}
+addEventListener('resize',resize);
+function frame(dt){
   if(!paused)time+=dt;
   const samples=curiosity.step(time,positions);
   for(const e of entries){const p=samples.get(e.entity.id);e.figure.group.position.fromArray(p.position);
@@ -74,4 +83,9 @@ function frame(now){
   document.querySelector('#decision').textContent=decision ? `${entities.find(e=>e.id===decision.entityId)?.label ?? decision.entityId}: ${decision.reason} Auswahl: ${decision.action==='EXPLORE'?'Umgebung erkunden':'Untersuchung fortsetzen'}.` : 'Noch keine abgeschlossene Untersuchung.';
   document.body.dataset.time=time.toFixed(2);document.body.dataset.discovered=String(discovered);
 }
-requestAnimationFrame(frame);
+loop = createFrameLoop({ requestFrame: callback => requestAnimationFrame(callback), cancelFrame: id => cancelAnimationFrame(id), render: frame, paused, hidden: document.hidden });
+controls.addEventListener('change',()=>loop.invalidate());
+document.addEventListener('visibilitychange',()=>loop.setHidden(document.hidden));
+resize();
+}
+startWorld();

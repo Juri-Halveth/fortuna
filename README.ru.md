@@ -13,7 +13,7 @@
 
 ```sh
 node --test docs/*.test.mjs
-python -m http.server 8849 --bind 127.0.0.1 --directory docs
+python -c "import http.server, os; os.chdir('docs'); http.server.SimpleHTTPRequestHandler.extensions_map['.mjs']='text/javascript'; http.server.test(HandlerClass=http.server.SimpleHTTPRequestHandler,port=8849,bind='127.0.0.1')"
 ```
 
 Откройте `http://127.0.0.1:8849/`. Здесь опубликована браузерная версия.
@@ -21,6 +21,6 @@ python -m http.server 8849 --bind 127.0.0.1 --directory docs
 или EXE-файла. Оценки следуют введённым данным и не подтверждают повышение
 шансов выигрыша. Все профили используют одну локальную систему правил.
 
-Руководитель: Юри Хальвет / HALVETH. Разработка с помощью ИИ.
+Руководитель: Юри / HALVETH. Разработка с помощью ИИ.
 Общая лицензия проекта ещё не предоставлена; [условия компонентов](docs/NOTICE.md)
 сохраняют силу. Контакт: security@halveth.de.
