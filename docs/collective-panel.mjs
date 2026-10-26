@@ -1,5 +1,5 @@
 import {createMembers,decide} from './collective.mjs';
-const panel=document.querySelector('#collective'),summary=document.querySelector('#collective-status'),body=document.querySelector('#collective-members'),detail=document.querySelector('#collective-detail');
+const panel=document.querySelector('#collective'),summary=document.querySelector('#collective-status'),body=document.querySelector('#collective-members'),detail=document.querySelector('#collective-detail'),loadStatus=document.querySelector('#collective-load-status');
 const columns=['id','probability','payout','cost','joy','stability','risk'];
 let members=[],current=null;
 const text=(tag,value)=>{const node=document.createElement(tag);node.textContent=value;return node;};
@@ -73,4 +73,5 @@ try{
   if(window.HalvethUniverse.entities.length!==69||publicRows.some(row=>!window.HalvethUniverse.entities.some(entity=>entity.id===row.id&&entity.label===row.label)))throw Error('Figurenquelle passt nicht zum gebundenen Kollektiv.');
   addRow();addRow();draw();summary.textContent='70 Profile bereit. Starte den Beispielvergleich.';
   document.querySelector('#collective-open').disabled=false;
-}catch(error){summary.textContent=error.message;document.querySelector('#collective-calculate').disabled=true;}
+  loadStatus.hidden=true;
+}catch(error){summary.textContent=error.message;loadStatus.textContent='Der Vergleich konnte nicht geladen werden. Bitte lade die Seite neu.';document.querySelector('#collective-calculate').disabled=true;}

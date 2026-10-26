@@ -791,6 +791,10 @@
     "unterwegs": {
       "en": "on the move",
       "ru": "в движении"
+    },
+    "Der Vergleich konnte nicht geladen werden. Bitte lade die Seite neu.": {
+      "en": "The comparison could not be loaded. Please reload the page.",
+      "ru": "Не удалось загрузить сравнение. Пожалуйста, обновите страницу."
     }
   }
 }
