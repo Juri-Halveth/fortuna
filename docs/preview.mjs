@@ -13,7 +13,7 @@ try { renderer = new T.WebGLRenderer({ antialias: true, preserveDrawingBuffer: t
 catch {
   const message = document.createElement('p');
   message.className = 'world-unavailable';
-  message.textContent = 'Die 3D-Ansicht ist in diesem Browser gerade nicht verfügbar. Möglichkeiten kannst du weiterhin über „Kollektiv /70“ vergleichen.';
+  message.textContent = 'Die 3D-Ansicht ist in diesem Browser gerade nicht verfügbar. „Beispiel vergleichen“ funktioniert weiterhin.';
   document.querySelector('#world').append(message);
   document.querySelector('#events').textContent = 'Der Vergleich bleibt verfügbar.';
   for (const id of ['pause','ask','inspect']) document.querySelector('#'+id).disabled = true;
@@ -53,7 +53,6 @@ document.querySelector('#ask').onclick = () => {
 document.querySelector('#inspect').onclick = () => {
   const details = document.querySelector('#details'); details.hidden = !details.hidden;
   document.querySelector('#question').hidden = true;
-  document.querySelector('#title').textContent = 'FORTUNA';
 };
 fetch('object.json').then(r=>r.ok?r.json():Promise.reject()).then(m=>{
   document.querySelector('#digest').textContent = `SHA-256: ${m.sourceArchive.sha256}`;

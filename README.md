@@ -12,6 +12,12 @@ nachvollziehen. Die Figuren im Browserraum folgen lokalen Regeln.
 
 ## Das liegt hier als Code vor
 
+„Beispiel vergleichen“ öffnet zwei ausgefüllte Beispieloptionen und berechnet
+sofort ihre Auswahl. „Eigene Möglichkeiten“ leert die Beispielwerte. Nach
+einer Änderung führt „Vergleich berechnen“ dieselbe Modellrechnung erneut aus.
+Auf dem Handy erscheinen die Eingaben als beschriftete Karten. Die vollständige
+Liste der 70 Modellprofile und Gewichte ist zusätzlich aufklappbar.
+
 - `docs/collective.mjs`: transparente Bewertung gelieferter Optionen und Gewichte.
 - `docs/curiosity.mjs`: lokale Verhaltensregeln für die Figuren.
 - `docs/index.html`: Browseroberfläche mit Erkundungsraum und Detailansicht.
