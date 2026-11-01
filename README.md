@@ -2,6 +2,10 @@
 
 # Fortuna · Möglichkeiten im Browser vergleichen
 
+![HALVETH / NETZ – Fortuna: ein Ausgangspunkt verzweigt in gewichtete Optionen](HALVETH_NETZ_HERO.svg)
+
+**HALVETH / NETZ · Software & Modelle.** [Starship Lab öffnen](https://juri-halveth.github.io/universum/) und dort die Projektkarte „FORTUNA“ auswählen.
+
 **Person: Juri. Projekt: HALVETH.** [Namenszuordnung](IDENTITY.md).
 
 **Eine erkundbare Browseroberfläche und lokale JavaScript-Modelle.**
