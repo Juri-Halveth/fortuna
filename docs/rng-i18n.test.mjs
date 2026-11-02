@@ -49,6 +49,35 @@ test('translated results preserve the same counts, probability and two-series li
   }
 });
 
+test('count grammar follows English, German and Russian singular and plural rules', () => {
+  const ruForms = [
+    [1, 'успешный исход', 'испытание', 'локальное испытание'],
+    [2, 'успешных исхода', 'испытания', 'локальных испытания'],
+    [4, 'успешных исхода', 'испытания', 'локальных испытания'],
+    [5, 'успешных исходов', 'испытаний', 'локальных испытаний'],
+    [11, 'успешных исходов', 'испытаний', 'локальных испытаний'],
+    [14, 'успешных исходов', 'испытаний', 'локальных испытаний'],
+    [21, 'успешный исход', 'испытание', 'локальное испытание'],
+    [22, 'успешных исхода', 'испытания', 'локальных испытания'],
+    [25, 'успешных исходов', 'испытаний', 'локальных испытаний'],
+    [111, 'успешных исходов', 'испытаний', 'локальных испытаний'],
+    [112, 'успешных исходов', 'испытаний', 'локальных испытаний'],
+  ];
+  for (const [count, hitForm, drawForm, localDrawForm] of ruForms) {
+    const printed = new Intl.NumberFormat('ru-RU').format(count);
+    const result = resultText('ru', 'baseline', '0.5', {hits: count, draws: count, observedRatio: 0.5});
+    assert.ok(result.includes(`${printed} ${hitForm} / ${printed} ${drawForm}`), result);
+    const progress = progressText('ru', 'baseline', count, count, count);
+    assert.ok(progress.includes(`${printed} / ${printed} ${drawForm}`), progress);
+    assert.ok(progress.includes(`${printed} ${hitForm} в этой серии`), progress);
+    assert.ok(completionText('ru', count).includes(`${printed} ${localDrawForm}`));
+  }
+  assert.match(resultText('ru', 'baseline', '0.5', {hits: 0, draws: 5, observedRatio: 0}), /0 успешных исходов \/ 5 испытаний/);
+  assert.match(resultText('en', 'baseline', '1', {hits: 1, draws: 1, observedRatio: 1}), /1 hit out of 1 draw/);
+  assert.match(progressText('en', 'baseline', 1, 2, 1), /1 hit in this series/);
+  assert.match(resultText('de', 'baseline', '1', {hits: 1, draws: 1, observedRatio: 1}), /1 Treffer aus 1 Ziehung/);
+});
+
 test('validation, cancellation and runtime errors are localized without reflecting raw messages', () => {
   const errors = [];
   for (const invoke of [() => parseProbability('0,5'), () => parseDraws('1000000')]) {

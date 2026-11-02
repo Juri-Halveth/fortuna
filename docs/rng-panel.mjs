@@ -1,5 +1,5 @@
-import {runExperiment} from './rng-lab.mjs';
-import {completionText, failureText, progressText, resultText, rngCopy, rngLanguage} from './rng-i18n.mjs';
+import {runExperiment} from './rng-lab.mjs?v=sha256-f97265dcc61da1f8dbe8ae8379b46e9f9e193f712457e7723a14fc1b33b0e852';
+import {completionText, failureText, progressText, resultText, rngCopy, rngLanguage} from './rng-i18n.mjs?v=sha256-51e6c7f76fb50d7b2d0b11deaa7fad6a2c578d886734c8e816556fd30316d58f';
 
 const language = rngLanguage(window.HalvethHubLanguage?.language);
 document.title = rngCopy(language, 'title');
