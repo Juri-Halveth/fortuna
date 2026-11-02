@@ -16,7 +16,7 @@ nicht voraus.
 
 [Modellcode und Prüfpfad](#das-liegt-hier-als-code-vor) · [HALVETH Starship Lab (optional)](https://juri-halveth.github.io/universum/)
 
-![HALVETH / NETZ – Fortuna: ein Ausgangspunkt verzweigt in gewichtete Optionen](HALVETH_NETZ_HERO.svg)
+![FORTUNA: zwei schematische Modellchancen in getrennten Ziehungsserien](HALVETH_NETZ_HERO.svg)
 
 **Person: Juri. Projekt: HALVETH.** [Namenszuordnung](IDENTITY.md).
 
@@ -29,8 +29,9 @@ Auf dem Handy erscheinen die Eingaben als beschriftete Karten. Die vollständige
 Liste der 70 Modellprofile und Gewichte ist zusätzlich aufklappbar.
 
 „Glücksversuch starten“ öffnet das getrennte Wahrscheinlichkeitslabor. Zwei
-Serien verwenden die eingestellten Chancen und dieselbe Anzahl unabhängiger
-Ziehungen. Bei 999.999 je Serie sind es insgesamt 1.999.998 lokale Ziehungen.
+Serien verwenden die eingestellten Chancen und dieselbe Anzahl von Ziehungen,
+die das Modell als unabhängig voraussetzt. Bei 999.999 je Serie sind es
+insgesamt 1.999.998 lokale Ziehungen.
 Eine Ergebnisleiste zeigt die gezählten Treffer. Der Versuch lässt sich
 abbrechen; ein Abbruch erzeugt kein fertiges Ergebnis. Die Dezimalchance hat
 höchstens neun Nachkommastellen. Rejection Sampling vermeidet einen Modulo-Bias

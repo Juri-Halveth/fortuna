@@ -32,6 +32,11 @@ Die neuen Dateien ändern die bestehenden Lizenzhinweise und die offene
 Projektlizenzwahl nicht.
 
 Das Browser-Wahrscheinlichkeitslabor (`rng-lab.mjs`, `rng-panel.mjs`, `rng.css`
-und `rng-lab.test.mjs`) wurde für diese Fassung neu geschrieben. Es enthält
-keine Kopie des lokalen Desktop-Labors und keine Schnittstelle zu fremden
-Servern. Auch für diese neuen Dateien bleibt die Projektlizenzwahl offen.
+und `rng-lab.test.mjs`) sowie das projektspezifische Symbol `favicon.svg` wurden
+für diese Fassung neu geschrieben beziehungsweise gezeichnet. Die bestehende
+`index.html` wurde um die Laborbedienung erweitert. Die Illustration
+`HALVETH_NETZ_HERO.svg` und ihre auf Pages eingebundene, bytegleiche Fassung
+`docs/netz-starship-hero.svg` wurden als schematische Modellgrafik neu gezeichnet.
+Es gibt keine Kopie des lokalen Desktop-Labors und keine Schnittstelle zu
+fremden Servern. Auch für diese neuen Bestandteile bleibt die Projektlizenzwahl
+offen.

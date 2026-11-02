@@ -26,7 +26,7 @@
 </dialog>
 <dialog id="rng-dialog" aria-labelledby="rng-title">
   <div class="rng-heading"><div><small>WÄHLE WAHRSCHEINLICHKEIT UND WIEDERHOLUNGEN</small><h2 id="rng-title">FORTUNA · Glücksversuch</h2></div><button id="rng-close" type="button">Schließen</button></div>
-  <p>Ein eigener Bernoulli-Versuch im Browser: zwei getrennte Serien, gleiche Anzahl von Ziehungen, ein einstellbares Ereignis. Jede Ziehung ist unabhängig.</p>
+  <p>Ein eigener Bernoulli-Versuch im Browser: zwei getrennte Serien, gleiche Anzahl von Ziehungen, ein modelliertes Trefferereignis. Das Modell setzt unabhängige Ziehungen voraus.</p>
   <form id="rng-form" novalidate>
     <div class="rng-inputs"><label>Ausgangschance <input id="rng-base" type="text" inputmode="decimal" value="0.01" autocomplete="off" spellcheck="false"><small>0 bis 1, z. B. 0.01 für 1 %</small></label><label>Szenariochance <input id="rng-proposed" type="text" inputmode="decimal" value="0.05" autocomplete="off" spellcheck="false"><small>Eigene Modellannahme, keine Fremdserveränderung</small></label><label>Ziehungen je Serie <input id="rng-draws" type="text" inputmode="numeric" value="999999" autocomplete="off" spellcheck="false"><small>1 bis 999999 · zusammen höchstens 1.999.998</small></label></div>
     <div class="rng-actions"><button id="rng-start" type="submit">Zwei Serien ausführen</button><button id="rng-cancel" type="button" disabled>Abbrechen</button></div>
