@@ -1,30 +1,50 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
-  <title id="title">HALVETH / NETZ · FORTUNA</title>
-  <desc id="desc">Fortuna: ein Ausgangspunkt verzweigt in gewichtete Optionen</desc>
+  <title id="title">FORTUNA · lokales Wahrscheinlichkeitslabor</title>
+  <desc id="desc">Projektgrafik mit zwei schematischen Serien für eine ein- und eine fünfprozentige Modellchance. Sie zeigt keine gemessenen Ergebnisse.</desc>
   <defs>
     <linearGradient id="space" x2="1" y2="1">
-      <stop stop-color="#080e1b"/>
-      <stop offset="1" stop-color="#182638"/>
+      <stop stop-color="#081713"/>
+      <stop offset=".56" stop-color="#122923"/>
+      <stop offset="1" stop-color="#172a37"/>
     </linearGradient>
-    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
-      <path d="M36 0H0V36" fill="none" stroke="#abc3dd" stroke-opacity=".075"/>
+    <linearGradient id="accent" x2="1" y2="0">
+      <stop stop-color="#e5d17d"/>
+      <stop offset="1" stop-color="#86dfbd"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#b7d1be" stroke-opacity=".055"/>
+    </pattern>
+    <pattern id="samples" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="3" fill="#7a988e" fill-opacity=".5"/>
     </pattern>
   </defs>
-  <rect width="1200" height="300" rx="22" fill="url(#space)"/>
-  <rect width="1200" height="300" rx="22" fill="url(#grid)"/>
-  <path d="M0 0h8v300H0" fill="#ffc87b"/>
-  <path d="M815 35v230" stroke="#ffc87b" stroke-opacity=".3"/>
-  <text x="68" y="64" fill="#ffc87b" font-size="23" font-weight="700" letter-spacing="4" font-family="Segoe UI,Arial,sans-serif">HALVETH / NETZ</text>
-  <text x="69" y="113" fill="#aec8d8" font-size="18" letter-spacing="3" font-family="Segoe UI,Arial,sans-serif">SOFTWARE &amp; MODELLE</text>
-  <text x="66" y="190" fill="#f7fbff" font-size="51" font-weight="750" font-family="Segoe UI,Arial,sans-serif">FORTUNA</text>
-  <text x="69" y="232" fill="#bfd1e2" font-size="22" font-family="Segoe UI,Arial,sans-serif">Optionen vergleichen · lokal modellieren</text>
-  <path d="M68 257h322" stroke="#ffc87b" stroke-width="3" stroke-linecap="round"/>
-
-          <circle cx="870" cy="152" r="18" fill="#ffc87b"/>
-          <path d="M888 152h49q30 0 45-58h56m-150 58h137m-137 0h49q30 0 45 58h56" fill="none" stroke="#ffc87b" stroke-width="4"/>
-          <circle cx="1050" cy="94" r="19" fill="#332b28" stroke="#ffc87b" stroke-width="3"/>
-          <circle cx="1038" cy="152" r="19" fill="#332b28" stroke="#ffc87b" stroke-width="3"/>
-          <circle cx="1050" cy="210" r="19" fill="#332b28" stroke="#ffc87b" stroke-width="3"/>
-          <path d="M1080 83h47m-47 11h31m-43 47h59m-59 11h44m-32 47h47m-47 11h22" stroke="#ffc87b" stroke-width="3" opacity=".7"/>
-
+  <rect width="1200" height="300" rx="21" fill="url(#space)"/>
+  <rect width="1200" height="300" rx="21" fill="url(#grid)"/>
+  <path d="M0 0h7v300H0" fill="url(#accent)"/>
+  <circle cx="94" cy="83" r="31" fill="#172b27" stroke="#e5d17d" stroke-width="2"/>
+  <path d="M81 65v36m0-36h27M81 82h22" fill="none" stroke="#e5d17d" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="108" cy="101" r="6" fill="#86dfbd"/>
+  <text x="141" y="76" fill="#e5d17d" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="3">LOKALES WAHRSCHEINLICHKEITSLABOR</text>
+  <text x="65" y="169" fill="#f1f8ef" font-family="Segoe UI,Arial,sans-serif" font-size="68" font-weight="750">FORTUNA</text>
+  <text x="67" y="211" fill="#c0d5ca" font-family="Segoe UI,Arial,sans-serif" font-size="23">Chance setzen · Serien ziehen · Treffer prüfen</text>
+  <path d="M67 239h445" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
+  <text x="67" y="269" fill="#8fb5a8" font-family="Segoe UI,Arial,sans-serif" font-size="15" letter-spacing="1">EIGENES MODELL · BIS 999.999 ZIEHUNGEN JE SERIE</text>
+  <path d="M618 42v217" stroke="#9bc4ae" stroke-opacity=".25"/>
+  <text x="665" y="64" fill="#b6d5c3" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2">ZWEI SERIEN · SCHEMATISCH</text>
+  <rect x="660" y="83" width="204" height="169" rx="12" fill="#1c3430" stroke="#536e63"/>
+  <rect x="890" y="83" width="204" height="169" rx="12" fill="#1c3430" stroke="#536e63"/>
+  <text x="675" y="109" fill="#e5d17d" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700">AUSGANG · p = 1 %</text>
+  <text x="905" y="109" fill="#86dfbd" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700">SZENARIO · p = 5 %</text>
+  <rect x="681" y="120" width="120" height="120" fill="url(#samples)"/>
+  <rect x="911" y="120" width="120" height="120" fill="url(#samples)"/>
+  <circle cx="687" cy="126" r="4.2" fill="#e5d17d"/>
+  <circle cx="917" cy="126" r="4.2" fill="#86dfbd"/>
+  <circle cx="941" cy="138" r="4.2" fill="#86dfbd"/>
+  <circle cx="965" cy="162" r="4.2" fill="#86dfbd"/>
+  <circle cx="989" cy="186" r="4.2" fill="#86dfbd"/>
+  <circle cx="1013" cy="222" r="4.2" fill="#86dfbd"/>
+  <text x="1110" y="128" fill="#9fb9ae" font-family="Segoe UI,Arial,sans-serif" font-size="13">p</text>
+  <path d="M1114 141v64" stroke="#729a89" stroke-width="2"/>
+  <path d="m1108 147 6-7 6 7m-12 53 6 7 6-7" fill="none" stroke="#729a89" stroke-width="2"/>
+  <text x="662" y="268" fill="#91b5a6" font-family="Segoe UI,Arial,sans-serif" font-size="14">Symbolische Modellchancen, keine Versuchsergebnisse.</text>
 </svg>
