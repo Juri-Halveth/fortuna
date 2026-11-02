@@ -30,3 +30,8 @@ Profilgewichte sind abgeleitete Softwareparameter. Namen werden nicht als
 Autorisierung, menschliche Identität oder unabhängiger Konsens verwendet.
 Die neuen Dateien ändern die bestehenden Lizenzhinweise und die offene
 Projektlizenzwahl nicht.
+
+Das Browser-Wahrscheinlichkeitslabor (`rng-lab.mjs`, `rng-panel.mjs`, `rng.css`
+und `rng-lab.test.mjs`) wurde für diese Fassung neu geschrieben. Es enthält
+keine Kopie des lokalen Desktop-Labors und keine Schnittstelle zu fremden
+Servern. Auch für diese neuen Dateien bleibt die Projektlizenzwahl offen.
