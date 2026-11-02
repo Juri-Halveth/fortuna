@@ -2,10 +2,11 @@
 const SCALE = 1_000_000_000;
 const ACCEPT_BELOW = 4_000_000_000; // Four equally sized 1e9 ranges in Uint32.
 export const MAX_DRAWS = 999_999;
+const labError = (code, message) => Object.assign(new Error(message), {code});
 
 export function parseProbability(value) {
   if (typeof value !== 'string' || !/^(?:0(?:\.\d{1,9})?|1(?:\.0{1,9})?)$/.test(value)) {
-    throw Error('Chance als Dezimalzahl von 0 bis 1 mit höchstens neun Nachkommastellen eingeben.');
+    throw labError('INVALID_PROBABILITY', 'Chance als Dezimalzahl von 0 bis 1 mit höchstens neun Nachkommastellen eingeben.');
   }
   const [whole, fraction = ''] = value.split('.');
   return Number(whole) * SCALE + Number(fraction.padEnd(9, '0'));
@@ -13,13 +14,13 @@ export function parseProbability(value) {
 
 export function parseDraws(value) {
   if (typeof value !== 'string' || !/^[1-9][0-9]{0,5}$/.test(value) || Number(value) > MAX_DRAWS) {
-    throw Error('Ziehungen als Ganzzahl von 1 bis 999999 eingeben.');
+    throw labError('INVALID_DRAWS', 'Ziehungen als Ganzzahl von 1 bis 999999 eingeben.');
   }
   return Number(value);
 }
 
 function browserRandom() {
-  if (!globalThis.crypto?.getRandomValues) throw Error('Sichere Browser-Zufallsquelle nicht verfügbar.');
+  if (!globalThis.crypto?.getRandomValues) throw labError('NO_CRYPTO', 'Sichere Browser-Zufallsquelle nicht verfügbar.');
   const pool = new Uint32Array(8192);
   let index = pool.length;
   return () => {
@@ -47,9 +48,9 @@ export async function runExperiment(request, options = {}) {
       let rejected = 0;
       while (done < end) {
         const raw = randomUint32();
-        if (!Number.isInteger(raw) || raw < 0 || raw > 0xffffffff) throw Error('Ungültiger Zufallswert.');
+        if (!Number.isInteger(raw) || raw < 0 || raw > 0xffffffff) throw labError('INVALID_RANDOM', 'Ungültiger Zufallswert.');
         if (raw >= ACCEPT_BELOW) {
-          if (++rejected > 4096) throw Error('Zufallsquelle liefert zu viele verworfene Werte.');
+          if (++rejected > 4096) throw labError('EXCESS_REJECTS', 'Zufallsquelle liefert zu viele verworfene Werte.');
           continue; // Rejection sampling removes modulo bias.
         }
         if (raw % SCALE < threshold) hits++;

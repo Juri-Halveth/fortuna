@@ -1,4 +1,8 @@
 import {runExperiment} from './rng-lab.mjs';
+import {completionText, failureText, progressText, resultText, rngCopy, rngLanguage} from './rng-i18n.mjs';
+
+const language = rngLanguage(window.HalvethHubLanguage?.language);
+document.title = rngCopy(language, 'title');
 
 const dialog = document.querySelector('#rng-dialog');
 const form = document.querySelector('#rng-form');
@@ -17,11 +21,11 @@ document.querySelector('#rng-close').addEventListener('click', () => dialog.clos
 dialog.addEventListener('close', () => controller?.abort());
 cancel.addEventListener('click', () => controller?.abort());
 
-function resultRow(label, probability, result, maxRatio) {
+function resultRow(phase, probability, result, maxRatio) {
   const row = document.createElement('div');
   row.className = 'rng-result-row';
   const caption = document.createElement('div');
-  caption.textContent = `${label}: ${result.hits.toLocaleString('de-DE')} Treffer aus ${result.draws.toLocaleString('de-DE')} · ${(100 * result.observedRatio).toLocaleString('de-DE', {maximumFractionDigits: 4})} % beobachtet · ${(100 * Number(probability)).toLocaleString('de-DE', {maximumFractionDigits: 7})} % eingestellt`;
+  caption.textContent = resultText(language, phase, probability, result);
   const track = document.createElement('div');
   track.className = 'rng-track';
   const fill = document.createElement('div');
@@ -46,7 +50,7 @@ form.addEventListener('submit', async event => {
   cancel.disabled = false;
   progress.value = 0;
   output.replaceChildren();
-  status.textContent = 'Lokale Ziehungen laufen …';
+  status.textContent = rngCopy(language, 'running');
   let lastAnnouncement = 0;
   let lastPhase = '';
   try {
@@ -55,7 +59,7 @@ form.addEventListener('submit', async event => {
       onProgress: ({phase, completed, total, hits}) => {
         progress.value = completed / total;
         if (phase !== lastPhase || completed - lastAnnouncement >= total / 20 || completed === total) {
-          status.textContent = `${phase === 'baseline' ? 'Ausgangschance' : 'Szenario'} · ${completed.toLocaleString('de-DE')} / ${total.toLocaleString('de-DE')} Ziehungen · ${hits.toLocaleString('de-DE')} Treffer in dieser Serie`;
+          status.textContent = progressText(language, phase, completed, total, hits);
           lastAnnouncement = completed;
           lastPhase = phase;
         }
@@ -63,12 +67,12 @@ form.addEventListener('submit', async event => {
     });
     const maxRatio = Math.max(result.baseline.observedRatio, result.changed.observedRatio, 0.000001);
     output.append(
-      resultRow('Ausgangschance', request.base, result.baseline, maxRatio),
-      resultRow('Szenario', request.proposed, result.changed, maxRatio),
+      resultRow('baseline', request.base, result.baseline, maxRatio),
+      resultRow('proposed', request.proposed, result.changed, maxRatio),
     );
-    status.textContent = `Fertig: ${(result.baseline.draws + result.changed.draws).toLocaleString('de-DE')} lokale Ziehungen. Die beiden Trefferzahlen sind Stichproben.`;
+    status.textContent = completionText(language, result.baseline.draws + result.changed.draws);
   } catch (error) {
-    status.textContent = error.name === 'AbortError' ? 'Versuch abgebrochen; keine Ergebnisbehauptung.' : `Eingabe oder Ausführung prüfen: ${error.message}`;
+    status.textContent = failureText(language, error);
   } finally {
     if (controller === current) controller = null;
     start.disabled = false;
