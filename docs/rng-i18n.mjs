@@ -42,34 +42,52 @@ const ERROR_KEYS = {
   INVALID_PROBABILITY: 'invalidProbability', INVALID_DRAWS: 'invalidDraws',
   NO_CRYPTO: 'noCrypto', INVALID_RANDOM: 'invalidRandom', EXCESS_REJECTS: 'excessRejects',
 };
+const COUNT_TERMS = {
+  de: {draw: ['Ziehung', 'Ziehungen'], hit: ['Treffer', 'Treffer'], localDraw: ['lokale Ziehung', 'lokale Ziehungen']},
+  en: {draw: ['draw', 'draws'], hit: ['hit', 'hits'], localDraw: ['local draw', 'local draws']},
+  ru: {
+    draw: ['испытание', 'испытания', 'испытаний'],
+    hit: ['успешный исход', 'успешных исхода', 'успешных исходов'],
+    localDraw: ['локальное испытание', 'локальных испытания', 'локальных испытаний'],
+  },
+};
 
 export const rngLanguage = value => Object.hasOwn(LOCALES, value) ? value : 'de';
 export const rngCopy = (language, key) => COPY[rngLanguage(language)][key];
 const number = (language, value, options) => new Intl.NumberFormat(LOCALES[rngLanguage(language)], options).format(value);
 const percent = (language, ratio, digits) => number(language, ratio * 100, {maximumFractionDigits: digits});
+function countTerm(language, count, kind) {
+  const lang = rngLanguage(language), forms = COUNT_TERMS[lang][kind];
+  if (lang !== 'ru') return forms[count === 1 ? 0 : 1];
+  const lastHundred = count % 100, lastTen = count % 10;
+  if (lastHundred >= 11 && lastHundred <= 14) return forms[2];
+  if (lastTen === 1) return forms[0];
+  if (lastTen >= 2 && lastTen <= 4) return forms[1];
+  return forms[2];
+}
 
 export function progressText(language, phase, completed, total, hits) {
   const lang = rngLanguage(language), label = rngCopy(lang, phase === 'baseline' ? 'baseline' : 'proposed');
   const count = `${number(lang, completed)} / ${number(lang, total)}`;
-  if (lang === 'en') return `${label} · ${count} draws · ${number(lang, hits)} hits in this series`;
-  if (lang === 'ru') return `${label} · ${count} испытаний · ${number(lang, hits)} успешных исходов в этой серии`;
-  return `${label} · ${count} Ziehungen · ${number(lang, hits)} Treffer in dieser Serie`;
+  if (lang === 'en') return `${label} · ${count} ${countTerm(lang, total, 'draw')} · ${number(lang, hits)} ${countTerm(lang, hits, 'hit')} in this series`;
+  if (lang === 'ru') return `${label} · ${count} ${countTerm(lang, total, 'draw')} · ${number(lang, hits)} ${countTerm(lang, hits, 'hit')} в этой серии`;
+  return `${label} · ${count} ${countTerm(lang, total, 'draw')} · ${number(lang, hits)} ${countTerm(lang, hits, 'hit')} in dieser Serie`;
 }
 
 export function resultText(language, phase, probability, result) {
   const lang = rngLanguage(language), label = rngCopy(lang, phase);
   const hits = number(lang, result.hits), draws = number(lang, result.draws);
   const observed = percent(lang, result.observedRatio, 4), configured = percent(lang, Number(probability), 7);
-  if (lang === 'en') return `${label}: ${hits} hits out of ${draws} draws · ${observed} % observed · ${configured} % set`;
-  if (lang === 'ru') return `${label}: ${hits} успешных исходов из ${draws} испытаний · наблюдалось ${observed} % · задано ${configured} %`;
-  return `${label}: ${hits} Treffer aus ${draws} · ${observed} % beobachtet · ${configured} % eingestellt`;
+  if (lang === 'en') return `${label}: ${hits} ${countTerm(lang, result.hits, 'hit')} out of ${draws} ${countTerm(lang, result.draws, 'draw')} · ${observed} % observed · ${configured} % set`;
+  if (lang === 'ru') return `${label}: ${hits} ${countTerm(lang, result.hits, 'hit')} / ${draws} ${countTerm(lang, result.draws, 'draw')} · наблюдалось ${observed} % · задано ${configured} %`;
+  return `${label}: ${hits} ${countTerm(lang, result.hits, 'hit')} aus ${draws} ${countTerm(lang, result.draws, 'draw')} · ${observed} % beobachtet · ${configured} % eingestellt`;
 }
 
 export function completionText(language, total) {
   const lang = rngLanguage(language), count = number(lang, total);
-  if (lang === 'en') return `Finished: ${count} local draws. The two hit counts are samples.`;
-  if (lang === 'ru') return `Готово: ${count} локальных испытаний. Число успешных исходов в каждой серии — выборочный результат.`;
-  return `Fertig: ${count} lokale Ziehungen. Die beiden Trefferzahlen sind Stichproben.`;
+  if (lang === 'en') return `Finished: ${count} ${countTerm(lang, total, 'localDraw')}. The two hit counts are samples.`;
+  if (lang === 'ru') return `Готово: ${count} ${countTerm(lang, total, 'localDraw')}. Число успешных исходов в каждой серии — выборочный результат.`;
+  return `Fertig: ${count} ${countTerm(lang, total, 'localDraw')}. Die beiden Trefferzahlen sind Stichproben.`;
 }
 
 export function failureText(language, error) {
